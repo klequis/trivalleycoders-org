@@ -3,23 +3,25 @@ import {
   withStyles,
   Typography,
 } from '@material-ui/core'
-import Section from 'ui/ui-elements/Section'
+import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
+import Community from 'ui/Community'
 
 const Home = ({ classes }) => {
   return (
     <div id='app-wrapper' className={classes.appWrapper}>
-      <section id='community' className={classes.sectionOuterWhite}>
-        <Section id='community' color='gray'>
-          <Typography variant='display1'>
-            A Community
-          </Typography>
-        </Section>
-      </section>
-      <section id='school' className={classes.sectionOuterGray}>
-        <section id='sectionInner-school' className={classes.sectionInner}>
-
-        </section>
-      </section>
+      <Section id='community' color={white}>
+        <Community />
+      </Section>
+      <Section id='school' color={darkGrey}>
+        <Typography variant='display1'>
+          School
+        </Typography>
+      </Section>
+      <Section id='school' color={grey}>
+        <Typography variant='display1'>
+          More then Coding
+        </Typography>
+      </Section>
     </div>
   )
 }
@@ -33,7 +35,7 @@ const styles = {
 
 
 
-  sectionInnerGray: {
+  sectionInnerGrey: {
     backgroundColor: 'white',
     width: '80vw',
     minHeight: '100px',

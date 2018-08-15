@@ -2,13 +2,35 @@ import React from 'react'
 import {
   withStyles,
 } from '@material-ui/core'
-import { gray } from '@material-ui/core/colors'
+import { green } from 'logger'
+
+export const darkGrey = 'darkGrey'
+export const grey = 'grey'
+export const white = 'white'
+
+// import { grey } from '@material-ui/core/colors'
 
 const Section = ({ classes, color='white', id, children }) => {
-  const sectionStyle = color === 'white' ? classes.outerWhite : classes.outerGray
+  green('color', color)
+  const sectionStyle = color => {
+    switch (color) {
+      case grey:
+        green('case', grey)
+        return classes.bgGrey
+      case darkGrey:
+        green('case', darkGrey)
+        return classes.bgDarkGrey
+      case white:
+        green('case', white)
+        return classes.bgWhite
+      default:
+        green('default')
+        throw new Error('default')
+    }
+  }
   return (
-    <section id={`section-outer-${id}`} className={sectionStyle}>
-      <section id={`section-inner-${id}`} className={classes.inner}>
+    <section id={`section-outer-${id}`} className={sectionStyle(color)}>
+      <section id={`section-inner-${id}`} className={classes.bgInner}>
         {children}
       </section>
     </section>
@@ -16,17 +38,22 @@ const Section = ({ classes, color='white', id, children }) => {
 }
 
 const styles = theme => ({
-  outerGray: {
-    backgroundColor: theme.palette.common.gray,
+  bgGrey: {
+    backgroundColor: theme.palette.common.grey,
     width: '100vw',
     minHeight: '100px'
   },
-  outerWhite: {
+  bgDarkGrey: {
+    backgroundColor: theme.palette.common.darkGrey,
+    width: '100vw',
+    minHeight: '100px'
+  },
+  bgWhite: {
     backgroundColor: theme.palette.common.white,
     width: '100vw',
     minHeight: '100px'
   },
-  inner: {
+  bgInner: {
     backgroundColor: 'transparent',
     width: '80vw',
     minHeight: '100px',

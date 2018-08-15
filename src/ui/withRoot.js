@@ -23,7 +23,8 @@ const theme = createMuiTheme({
     common: {
       black: '#000',
       white: '#fff',
-      gray: grey[500]
+      grey: grey[500],
+      darkGrey: grey[800],
     },
     primary: {
       light: '#7986cb',
@@ -44,7 +45,7 @@ const theme = createMuiTheme({
       contrastText: '#fff',
     },
 
-    // gray: {
+    // grey: {
     //   contrastThreshold: 3,
     //   tonalOffset: 0.2,
     // },
