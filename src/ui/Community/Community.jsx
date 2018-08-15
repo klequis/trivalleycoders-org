@@ -22,9 +22,9 @@ const Community = ({ classes }) => {
           <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
         </div>
         <div className={classes.contentRight}>
-          <p className={classes.contentPara}>
+          <Typography variant='headline' align='justify'>
             TriValley Coders is a community of developers helping developers. We hold free bi-weekly meetings where beginner and experienced developers mix and learn together.
-          </p>
+          </Typography>
         </div>
       </div>
       <MeetupButton />
@@ -47,10 +47,5 @@ const styles = {
     flexBasis: '50%',
     margin: '0 4% 0 4%'
   },
-  contentPara: {
-    margin: 0,
-    textAlign: 'justify'
-  }
-
 }
 export default withStyles(styles)(Community)

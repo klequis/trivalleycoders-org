@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
 import Community from 'ui/Community'
+import School from 'ui/School'
 
 const Home = ({ classes }) => {
   return (
@@ -13,9 +14,7 @@ const Home = ({ classes }) => {
         <Community />
       </Section>
       <Section id='school' color={darkGrey}>
-        <Typography variant='display1'>
-          School
-        </Typography>
+        <School />
       </Section>
       <Section id='school' color={grey}>
         <Typography variant='display1'>

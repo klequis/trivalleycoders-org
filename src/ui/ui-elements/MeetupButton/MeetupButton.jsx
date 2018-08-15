@@ -14,11 +14,26 @@ const MeetupButton = ({ classes }) => {
   return (
     <a href='https://www.meetup.com/trivalleycoders/'>
       <Button variant="contained" size="large" color="primary" className={classes.button}>
-        <FontAwesomeIcon icon={faMeetup} /> Join Us via Meetup!
+        <FontAwesomeIcon className={classes.leftIcon} icon={faMeetup} /> Join Us via Meetup!
       </Button>
     </a>
   )
 }
 
-const styles = {}
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+    fontSize: 40,
+  },
+  rightIcon: {
+    marginLeft: theme.spacing.unit,
+  },
+  iconSmall: {
+    fontSize: 20,
+  },
+})
+
 export default withStyles(styles)(MeetupButton)

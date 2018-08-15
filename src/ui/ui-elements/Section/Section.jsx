@@ -11,20 +11,15 @@ export const white = 'white'
 // import { grey } from '@material-ui/core/colors'
 
 const Section = ({ classes, color='white', id, children }) => {
-  green('color', color)
   const sectionStyle = color => {
     switch (color) {
       case grey:
-        green('case', grey)
         return classes.bgGrey
       case darkGrey:
-        green('case', darkGrey)
         return classes.bgDarkGrey
       case white:
-        green('case', white)
         return classes.bgWhite
       default:
-        green('default')
         throw new Error('default')
     }
   }
@@ -57,7 +52,7 @@ const styles = theme => ({
     backgroundColor: 'transparent',
     width: '80vw',
     minHeight: '100px',
-    border: '1px green solid',
+    // border: '1px green solid',
     margin: '0 auto',
     display: 'flex',
     flexFlow: 'column nowrap',
