@@ -1,23 +1,23 @@
 import React from 'react'
 import {
-  Typography,
   withStyles,
 } from '@material-ui/core'
 /* User */
 import TechIcons from './TechIcons'
-import GridList from './GridList'
+import Section, { darkGrey } from 'ui/ui-elements/Section'
+import SectionTitle from 'ui/ui-elements/SectionTitle'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
 
 const School = ({ classes }) => {
   return (
-    <React.Fragment>
-      <Typography variant='display1'>
+    <Section id='school' color={darkGrey}>
+      <SectionTitle bgColor='dark'>
         A Place to Learn
-      </Typography>
+      </SectionTitle>
       <TechIcons />
-    </React.Fragment>
+    </Section>
   )
 }
 

@@ -35,7 +35,6 @@ const MediaCard = ({ classes, src, height, width, ratio }) => {
     height: 0,
     paddingTop: ratio, // 16:9
   }
-  green('src', src)
   return (
     <Card style={cardStyle}>
       <CardMedia

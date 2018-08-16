@@ -4,50 +4,42 @@ import {
   withStyles,
 } from '@material-ui/core'
 /* User */
-import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
-import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
-// import Headline from 'ui/ui-elements/Headline'
+import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Text from 'ui/ui-elements/Text'
-
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
 
-const iCommunity = 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/community.jpg'
 
-const Community = ({ classes }) => {
+const MoreThanCoding = ({ classes }) => {
   return (
-    <Section id='community' color={white}>
-      <SectionTitle>
-        A Community
+    <Section id='more-than-coding' color={grey}>
+      <SectionTitle variant='display1' bgColor='dark'>
+        More then Coding
       </SectionTitle>
-      <div className={classes.content}>
-        <div className={classes.imageDiv}>
-          <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
-        </div>
-        <div className={classes.headlineDiv}>
+      <Text
+        align='center'
+        shade='light'
+        variant='headline'
 
-          <Text
-            align='center'
-            shade='dark'
-            classNames={[classes.headline]}
-          >
-            TriValley Coders is a community of developers helping developers. We hold free bi-weekly meetings where beginner and experienced developers mix and learn together.
-          </Text>
 
-        </div>
-      </div>
+      >
+        TriValley Coders is a community of developers helping developers. We hold free bi-weekly meetings where beginner and experienced developers mix and learn together.
+      </Text>
     </Section>
   )
 }
 
 const styles = theme => ({
   headline: {
-
+    // backgroundColor: 'orange',
+    wordSpacing: '-2px',
+    textAlign: 'center',
     [theme.breakpoints.up('md')]: {
       textAlign: 'left',
     },
+    // fontSize: '1.5rem',
   },
   imageDiv: {
     flexBasis: '50%',
@@ -88,4 +80,4 @@ const styles = theme => ({
   }
 })
 
-export default withStyles(styles)(Community)
+export default withStyles(styles)(MoreThanCoding)

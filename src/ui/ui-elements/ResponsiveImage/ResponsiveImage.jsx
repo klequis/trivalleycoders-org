@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 const styles = {
   imgFluid: {
+    display: 'block',
     maxWidth: '100%',
     height: 'auto',
   },
@@ -11,7 +12,7 @@ const styles = {
 
 const ResponsiveImage = ({ alt, classes, src}) => {
   return (
-    <img src={src} alt={alt} className={classes.imgFluid} />    
+    <img src={src} alt={alt} className={classes.imgFluid} />
   )
 }
 

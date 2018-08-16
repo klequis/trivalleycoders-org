@@ -3,24 +3,16 @@ import {
   withStyles,
   Typography,
 } from '@material-ui/core'
-import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
 import Community from 'ui/Community'
 import School from 'ui/School'
+import MoreThanCoding from 'ui/MoreThanCoding'
 
 const Home = ({ classes }) => {
   return (
     <div id='app-wrapper' className={classes.appWrapper}>
-      <Section id='community' color={white}>
-        <Community />
-      </Section>
-      <Section id='school' color={darkGrey}>
-        <School />
-      </Section>
-      <Section id='school' color={grey}>
-        <Typography variant='display1'>
-          More then Coding
-        </Typography>
-      </Section>
+      <Community />
+      <School />
+      <MoreThanCoding />
     </div>
   )
 }
