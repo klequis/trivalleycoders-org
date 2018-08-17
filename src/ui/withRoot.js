@@ -23,13 +23,20 @@ const theme = createMuiTheme({
     common: {
       headings: {
         dark: '#000',
-        light: '#fff'
+        light: '#fff',
+        green: '#00b119',
+      },
+      text: {
+        dark: '#000',
+        light: '#fff',
+        green: '#00b119',
       },
       background: {
         light: '#fff',
         medium: '#646464',
         dark: '#272b30',
-      }
+      },
+
     },
     primary: {
       light: '#7986cb',

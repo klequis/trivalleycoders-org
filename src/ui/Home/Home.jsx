@@ -6,6 +6,7 @@ import {
 import Community from 'ui/Community'
 import School from 'ui/School'
 import MoreThanCoding from 'ui/MoreThanCoding'
+import Events from 'ui/Events'
 
 const Home = ({ classes }) => {
   return (
@@ -13,6 +14,7 @@ const Home = ({ classes }) => {
       <Community />
       <School />
       <MoreThanCoding />
+      <Events />
     </div>
   )
 }
