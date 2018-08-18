@@ -1,8 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import MediaCard from 'ui/ui-elements/MediaCard'
+import MediaPaper from 'ui/ui-elements/MediaPaper'
 
 const logosTop = [
   {
@@ -56,7 +55,9 @@ const TechIcons = ({ classes }) => {
   return (
     <React.Fragment>
     <Grid container className={classes.root} spacing={40}>
-        <Grid item xs={12}>
+        <Grid item xs={12}
+          className={classes.item}
+        >
           <Grid
             container
             className={classes.gridTop}
@@ -64,14 +65,13 @@ const TechIcons = ({ classes }) => {
             spacing={40}
           >
             {logosTop.map(l => (
-              <Grid key={l.name} item>
-
-                  <MediaCard
-                    ratio={'100%'}
-                    height={l.height}
-                    width={l.width}
-                    src={l.img}
-                  />
+              <Grid key={l.name} item className={classes.item}>
+                <MediaPaper
+                  height={l.height}
+                  name={l.name}
+                  src={l.img}
+                  width={l.width}
+                />
               </Grid>
             ))}
           </Grid>
@@ -87,12 +87,12 @@ const TechIcons = ({ classes }) => {
           >
             {logosBottom.map(l => (
               <Grid key={l.name} item>
-                  <MediaCard
-                    ratio={'28.4090909%'}
-                    height={l.height}
-                    width={l.width}
-                    src={l.img}
-                  />
+                <MediaPaper
+                  height={l.height}
+                  name={l.name}
+                  src={l.img}
+                  width={l.width}
+                />
               </Grid>
             ))}
           </Grid>
@@ -103,12 +103,19 @@ const TechIcons = ({ classes }) => {
 }
 
 const styles = theme => ({
+  mediCard: {
+    // boxShadow: '0px 10px 30px 0px rgba(255, 0, 0, 0.2),0px 1px 1px 0px rgba(255, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12)',
+  },
+  item: {
+    // boxShadow: '0px 10px 30px 0px rgba(255, 0, 0, 0.2),0px 1px 1px 0px rgba(255, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12)',
+  },
   root: {
     flexGrow: 1
 
   },
   paper: {
-    height: 50,
+    // height: 50,
+    backgroundColor: 'transparant',
     // width: 100
   },
   control: {

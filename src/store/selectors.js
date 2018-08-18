@@ -1,11 +1,6 @@
-// import * as ku from '../lib/ke-utils'
+// eslint-disable-next-line
 import { red } from 'logger'
-export const getEvents = (state) => {
-  const ret = state.events
-  red('ret', ret)
-  return ret
-}
-
+export const getEvents = (state) => state.events
 
 // redux selectors
 export const getRequest = (state, key) =>

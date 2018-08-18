@@ -1,13 +1,7 @@
 import React from 'react'
-import styles from './style.css'
-// import { greenText } from '../../../lib/colors'
-// import classNames from 'classnames'
 import Text from 'ui/ui-elements/Text'
 
 const A = (props) => {
-  // const aStyles = {
-  //   color: props.fontColor === 'green' ? greenText : ''
-  // }
   return (
     <a href={props.href}>
       <Text
@@ -16,7 +10,6 @@ const A = (props) => {
       >
         {props.children}
       </Text>
-
     </a>
   )
 }

@@ -16,10 +16,15 @@ const styles = {
 
   },
   media: {
-    height: 0,
-    paddingTop: '100.0%', // 16:9
+    // height: 0,
+    // paddingTop: '100.0%', // 16:9
     // paddingTop: '0%',
+    boxShadow: 'none',
   },
+  root: {
+    boxShadow: 'none',
+  }
+
 }
 
 const placeholderImage = 'https://s3-us-west-2.amazonaws.com/photo-app-tvc/image-placeholder.png'
@@ -34,6 +39,7 @@ const MediaCard = ({ classes, src, height, width, ratio }) => {
   const mediaStyle = {
     height: 0,
     paddingTop: ratio, // 16:9
+
   }
   return (
     <Card style={cardStyle}>

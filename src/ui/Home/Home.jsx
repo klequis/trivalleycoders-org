@@ -1,12 +1,12 @@
 import React from 'react'
 import {
   withStyles,
-  Typography,
 } from '@material-ui/core'
 import Community from 'ui/Community'
 import School from 'ui/School'
 import MoreThanCoding from 'ui/MoreThanCoding'
 import Events from 'ui/Events'
+import Sponsors from 'ui/Sponsors'
 
 const Home = ({ classes }) => {
   return (
@@ -15,26 +15,17 @@ const Home = ({ classes }) => {
       <School />
       <MoreThanCoding />
       <Events />
+      <Sponsors />
     </div>
   )
 }
 
 const styles = {
   appWrapper: {
-    backgroundColor: 'black',
+    // backgroundColor: 'black',
     height: '100vh',
     width: '100vw',
-  },
-
-
-
-  sectionInnerGrey: {
-    backgroundColor: 'white',
-    width: '80vw',
-    minHeight: '100px',
-    border: '1px green solid',
-    margin: '0 auto',
-  },
+  }
 }
 
 export default withStyles(styles)(Home)

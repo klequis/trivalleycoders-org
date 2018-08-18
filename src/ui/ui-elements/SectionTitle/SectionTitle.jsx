@@ -3,6 +3,7 @@ import {
   Typography,
   withStyles,
 } from '@material-ui/core'
+import { green } from 'logger'
 
 /*
     color: light || dark
@@ -11,18 +12,18 @@ import {
 
 const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
 
-  const fontColor = {
-    color: bgColor === 'light'
-      ? theme.palette.common.headings.dark
-      : theme.palette.common.headings.light
-  }
-
+  // const fontColor = {
+  //   color: bgColor === 'light'
+  //     ? theme.palette.common.headings.dark
+  //     : theme.palette.common.headings.light
+  // }
+  green('theme', theme)
   return (
     <Typography
       variant='display1'
       align='center'
       className={classes.root}
-      style={fontColor}
+      // style={fontColor}
     >
       {children}
     </Typography>

@@ -1,13 +1,11 @@
 import React from 'react'
 import {
-  Typography,
   withStyles,
 } from '@material-ui/core'
 /* User */
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
-import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
-// import Headline from 'ui/ui-elements/Headline'
+import Section, { white } from 'ui/ui-elements/Section'
 import Text from 'ui/ui-elements/Text'
 
 /* Dev */

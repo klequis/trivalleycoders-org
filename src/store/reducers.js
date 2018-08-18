@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { merge } from 'ramda'
+// eslint-disable-next-line
 import { blue } from 'logger'
 
 export const events = ( state = [], { type, payload }) => {
@@ -7,23 +8,13 @@ export const events = ( state = [], { type, payload }) => {
   switch (type) {
     case 'app/replaceEvents':
       // ku.log('eventsById.payload', payload, 'green')
-      blue('payload', payload)
-      blue('payload.data', payload.data)
-      return payload.data
+      // blue('payload', payload)
+      // blue('payload.data', payload.events)
+      return payload.events
     default:
       return state
   }
 }
-
-// export const eventsIds = (state = [], { type, payload }) => {
-//   switch (type) {
-//     case 'app/replaceEvents':
-//       // ku.log('eventsIds.payload', payload, 'green')
-//       return payload.ids
-//     default:
-//       return state
-//   }
-// }
 
 
 export const requests = (state = {}, { type, payload, meta }) => {

@@ -1,16 +1,15 @@
 import React from 'react'
 import {
-  Typography,
   withStyles,
 } from '@material-ui/core'
+
 /* User */
-import Section, { grey, darkGrey, white } from 'ui/ui-elements/Section'
+import Section, { grey } from 'ui/ui-elements/Section'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Text from 'ui/ui-elements/Text'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
-
 
 const MoreThanCoding = ({ classes }) => {
   return (
@@ -22,10 +21,8 @@ const MoreThanCoding = ({ classes }) => {
         align='center'
         shade='light'
         variant='headline'
-
-
       >
-        TriValley Coders is a community of developers helping developers. We hold free bi-weekly meetings where beginner and experienced developers mix and learn together.
+        'Learning to code' is fun and a great catch-phrase but it is only a small part of what it takes to make software and be a software developer. At TriValley Coders we cover project creation to deployment and everything in between.
       </Text>
     </Section>
   )

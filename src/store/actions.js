@@ -1,14 +1,14 @@
 import api from '../api'
-import { fetchEvents } from '../api'
+//import { fetchEvents } from '../api'
+// eslint-disable-next-line
 import { orange } from 'logger'
 
 export const replaceEvents = (events) => {
-  orange('replaceEvents: events', events)
-  const data = events.data
-  orange('data', data)
+  // orange('replaceEvents: events', events)
+
   return {
     type: 'app/replaceEvents',
-    payload: { data },
+    payload: { events },
   }
 }
 
@@ -19,7 +19,6 @@ export const markRequestPending = (key) => ({
 })
 
 export const markRequestSuccess = (key) => {
-  // you can use console.log() here
   return ({
     type: 'app/markRequestSuccess',
     meta: { key },
