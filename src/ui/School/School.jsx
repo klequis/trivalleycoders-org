@@ -19,7 +19,7 @@ const School = ({ classes }) => {
           <Text
             variant='display1'
           >
-            Gain New Skills
+            Gain Skills
           </Text>
         </div>
         <div className={classes.logos}>

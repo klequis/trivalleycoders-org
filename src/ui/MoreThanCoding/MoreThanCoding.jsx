@@ -21,7 +21,7 @@ const MoreThanCoding = ({ classes }) => {
             shade='light'
             variant='body2'
           >
-            'Learning to code' is fun and a great catch-phrase but it is only a small part of what it takes to make software and be a software developer. At TriValley Coders we cover project creation to deployment and everything in between.
+            'Employers want developers who can "make software"'.
           </Text>
         </div>
         <div className={classes.titleDiv}>

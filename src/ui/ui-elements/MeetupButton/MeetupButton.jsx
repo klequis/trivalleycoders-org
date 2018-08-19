@@ -12,7 +12,7 @@ import { green } from 'logger'
 
 const MeetupButton = ({ classes }) => {
   return (
-    <a href='https://www.meetup.com/trivalleycoders/'>
+    <a href='https://www.meetup.com/trivalleycoders/events'>
       <Button variant="contained" size="large" color="primary" className={classes.button}>
         <FontAwesomeIcon className={classes.leftIcon} icon={faMeetup} /> Join Us via Meetup!
       </Button>

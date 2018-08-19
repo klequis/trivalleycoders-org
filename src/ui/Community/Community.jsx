@@ -18,24 +18,29 @@ const Community = ({ classes }) => {
   return (
     <div className={classes.appBarSpacing}>
       <Section id='community' color={white}>
-        <SectionTitle>
-          A Community
-        </SectionTitle>
         <div className={classes.content}>
+
           <div className={classes.imageDiv}>
             <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
           </div>
-          <div className={classes.headlineDiv}>
 
+          <div className={classes.headlineDiv}>
+            <Text
+              variant='display2'
+            >
+              Community
+            </Text>
             <Text
               align='center'
               shade='dark'
               classNames={[classes.headline]}
+              variant='display1'
             >
-              TriValley Coders is a community of developers helping developers.
+              Developers helping developers
             </Text>
             <MeetupButton />
           </div>
+
         </div>
       </Section>
     </div>
@@ -45,12 +50,12 @@ const Community = ({ classes }) => {
 //937.333
 const styles = theme => ({
   appBarSpacing: {
-    paddingTop: '50px',
+    paddingTop: '100px',
   },
   headline: {
 
     [theme.breakpoints.up('md')]: {
-      textAlign: 'left',
+      textAlign: 'center',
     },
   },
   imageDiv: {
@@ -62,19 +67,24 @@ const styles = theme => ({
   headlineDiv: {
     display: 'flex',
     flexFlow: 'column nowrap',
-    // justifyContent: 'space-between',
+
+
+    justifyContent: 'space-between',
     alignItems: 'center',
-    alignContent: 'space-between',
+    // alignContent: 'space-between',
+
+
     flexBasis: '50%',
     padding: '2% 4% 2% 4%',
     margin: 0,
     [theme.breakpoints.down('sm')]: {
       padding: 0
     },
+    backgroundColor: 'purple',
   },
   content: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'stretch',
     [theme.breakpoints.down('xs')]: {
       flexFlow: 'column',
     },
@@ -91,6 +101,7 @@ const styles = theme => ({
     [theme.breakpoints.up('xl')]: {
       margin: theme.spacing.unit * 2,
     },
+    backgroundColor: 'black',
   }
 })
 
