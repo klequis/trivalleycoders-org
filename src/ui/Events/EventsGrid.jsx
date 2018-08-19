@@ -116,7 +116,7 @@ const styles = {
   },
   media: {
     height: 0,
-    paddingTop: '50%',
+    paddingTop: '55.170%',
   },
   root: {
     flexGrow: 1,

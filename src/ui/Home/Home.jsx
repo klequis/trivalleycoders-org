@@ -7,10 +7,13 @@ import School from 'ui/School'
 import MoreThanCoding from 'ui/MoreThanCoding'
 import Events from 'ui/Events'
 import Sponsors from 'ui/Sponsors'
+// import Header from 'ui/Header'
+import AppBar from 'ui/AppBar'
 
 const Home = ({ classes }) => {
   return (
     <div id='app-wrapper' className={classes.appWrapper}>
+      <AppBar />
       <Community />
       <School />
       <MoreThanCoding />

@@ -26,9 +26,8 @@ const Section = ({ classes, color='white', id, children }) => {
   // }
   // green(`sectionStyle: ${id}` , sectionStyle(color))
   return (
-
     <section id={`section-outer-${id}`} className={`${classes.outer}`}>
-      <section id={`section-inner-${id}`} className={`${classes.bgInner} ${classes.test}`}>
+      <section id={`section-inner-${id}`} className={`${classes.inner} ${classes.test}`}>
         {children}
       </section>
     </section>
@@ -37,9 +36,16 @@ const Section = ({ classes, color='white', id, children }) => {
 
 // <section id={`section-outer-${id}`} className={`${sectionStyle(color)} ${classes.outer}`}>
 
+
+
 const styles = theme => ({
+  // divider: {
+  //   height: 0.5,
+	//   backgroundImage: 'linear-gradient(to right, #F79533,#F37055,#EF4E7B,#A166AB,#5073B8,#1098AD,#07B39B,#6FBA82)',
+  // },
   outer: {
-    paddingBottom: '28px'
+    paddingBottom: '28px',
+    // backgroundColor: 'red',
   },
   bgGrey: {
     // backgroundColor: theme.palette.common.background.medium,
@@ -56,8 +62,8 @@ const styles = theme => ({
     width: '100vw',
     minHeight: '100px'
   },
-  bgInner: {
-    // backgroundColor: 'transparent',
+  inner: {
+    // backgroundColor: 'purple',
     width: '80vw',
     minHeight: '100px',
     // border: '1px green solid',

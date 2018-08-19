@@ -7,7 +7,7 @@ import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Section, { white } from 'ui/ui-elements/Section'
 import Text from 'ui/ui-elements/Text'
-
+import MeetupButton from 'ui/ui-elements/MeetupButton'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
@@ -16,31 +16,37 @@ const iCommunity = 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/co
 
 const Community = ({ classes }) => {
   return (
-    <Section id='community' color={white}>
-      <SectionTitle>
-        A Community
-      </SectionTitle>
-      <div className={classes.content}>
-        <div className={classes.imageDiv}>
-          <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
-        </div>
-        <div className={classes.headlineDiv}>
+    <div className={classes.appBarSpacing}>
+      <Section id='community' color={white}>
+        <SectionTitle>
+          A Community
+        </SectionTitle>
+        <div className={classes.content}>
+          <div className={classes.imageDiv}>
+            <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
+          </div>
+          <div className={classes.headlineDiv}>
 
-          <Text
-            align='center'
-            shade='dark'
-            classNames={[classes.headline]}
-          >
-            TriValley Coders is a community of developers helping developers. We hold free bi-weekly meetings where beginner and experienced developers mix and learn together.
-          </Text>
-
+            <Text
+              align='center'
+              shade='dark'
+              classNames={[classes.headline]}
+            >
+              TriValley Coders is a community of developers helping developers.
+            </Text>
+            <MeetupButton />
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+    </div>
   )
 }
 
+//937.333
 const styles = theme => ({
+  appBarSpacing: {
+    paddingTop: '50px',
+  },
   headline: {
 
     [theme.breakpoints.up('md')]: {
@@ -55,8 +61,10 @@ const styles = theme => ({
   },
   headlineDiv: {
     display: 'flex',
-    justifyContent: 'center',
+    flexFlow: 'column nowrap',
+    // justifyContent: 'space-between',
     alignItems: 'center',
+    alignContent: 'space-between',
     flexBasis: '50%',
     padding: '2% 4% 2% 4%',
     margin: 0,

@@ -3,36 +3,39 @@ import { withStyles } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 import MediaPaper from 'ui/ui-elements/MediaPaper'
 
+const size1 = 45
+const size2 = 65
+
 const logosTop = [
   {
     name: 'HTML 5',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/html.svg',
-    height: 70,
-    width: 70,
+    height: size1,
+    width: size1,
   },
   {
     name: 'CSS',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/css.svg',
-    height: 70,
-    width: 70,
+    height: size1,
+    width: size1,
   },
   {
     name: 'JavaScript',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/javascript.svg',
-    height: 70,
-    width: 70,
+    height: size1,
+    width: size1,
   },
   {
     name: 'React',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/react.svg',
-    height: 70,
-    width: 70,
+    height: size1,
+    width: size1,
   },
   {
     name: 'Node',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/nodejs.svg',
-    height: 70,
-    width: 70,
+    height: size2,
+    width: size2,
   },
 ]
 
@@ -43,12 +46,12 @@ const logosBottom = [
     height: 51.13636362,
     width: 180,
   },
-  {
-    name: 'Express',
-    img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/express.svg',
-    height: 51.13636362,
-    width: 180,
-  },
+  // {
+  //   name: 'Express',
+  //   img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/express.svg',
+  //   height: 51.13636362,
+  //   width: 180,
+  // },
 ]
 
 const TechIcons = ({ classes }) => {
@@ -122,7 +125,7 @@ const styles = theme => ({
     padding: theme.spacing.unit * 2
   },
   gridBottom: {
-    marginTop: 40,
+    // marginTop: 40,
   },
   gridTop: {
 

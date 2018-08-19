@@ -14,21 +14,52 @@ import { green } from 'logger'
 const MoreThanCoding = ({ classes }) => {
   return (
     <Section id='more-than-coding' color={grey}>
-      <SectionTitle variant='display1' bgColor='dark'>
-        More then Coding
-      </SectionTitle>
-      <Text
-        align='center'
-        shade='light'
-        variant='headline'
-      >
-        'Learning to code' is fun and a great catch-phrase but it is only a small part of what it takes to make software and be a software developer. At TriValley Coders we cover project creation to deployment and everything in between.
-      </Text>
+      <div className={classes.wrapper}>
+        <div className={classes.messageDiv}>
+          <Text
+            align='left'
+            shade='light'
+            variant='body2'
+          >
+            'Learning to code' is fun and a great catch-phrase but it is only a small part of what it takes to make software and be a software developer. At TriValley Coders we cover project creation to deployment and everything in between.
+          </Text>
+        </div>
+        <div className={classes.titleDiv}>
+          <Text
+            align='center'
+            shade='light'
+            variant='display1'
+          >
+            More Than Coding
+          </Text>
+          <Text
+            align='center'
+            shade='light'
+            variant='display1'
+          >
+            "Making Software"
+          </Text>
+        </div>
+
+      </div>
     </Section>
   )
 }
 
 const styles = theme => ({
+  wrapper: {
+    display: 'flex',
+    flexFlow: 'row nowrap'
+  },
+  messageDiv: {
+    flexBasis: '50%',
+  },
+  titleDiv: {
+    display: 'flex',
+    flexFlow: 'column nowrap',
+    justifyContent: 'space-around',
+    flexBasis: '50%',
+  },
   headline: {
     // backgroundColor: 'orange',
     wordSpacing: '-2px',
