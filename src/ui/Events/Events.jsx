@@ -10,6 +10,7 @@ import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Text from 'ui/ui-elements/Text'
 import A from 'ui/ui-elements/A'
 import { getCachedData, setCachedData } from 'lib/cacheData'
+import Display1 from 'ui/ui-elements/Display1'
 import { green } from 'logger'
 
 class Events extends Component {
@@ -57,7 +58,7 @@ class Events extends Component {
               <SectionTitle>
                 Free Events
               </SectionTitle>
-              <Text>Something went wrong. Our events cannot be shown now. Please visit our group on Meetup <A href='https://www.meetup.com/trivalleycoders/'>TriValley Coders on Meetup</A></Text>
+              <Display1>Something went wrong. Our events cannot be shown now. Please visit our group on Meetup <A href='https://www.meetup.com/trivalleycoders/'>TriValley Coders on Meetup</A></Display1>
             </Section>
           )
         default:
@@ -67,7 +68,7 @@ class Events extends Component {
                 <SectionTitle>
                   Free Events
                 </SectionTitle>
-                <Text>Loading ... </Text>
+                <Display1>Loading ... </Display1>
               </Section>
             </Section>
           )
@@ -86,7 +87,6 @@ const mapStateToProps = (state) => {
     readEventsRequest: selectors.getRequest(state, 'readEvents'),
     events: selectors.getEvents(state),
   }
-  green('mstp: events', o.events)
   return o
 }
 

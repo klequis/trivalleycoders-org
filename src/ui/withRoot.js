@@ -150,18 +150,25 @@ const theme = createMuiTheme({
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
-    display4: {
-      fontSize: '7rem',
-      fontWeight: 300,
-      // eslint-disable-next-line
-      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      letterSpacing: '-.04em',
-      lineHeight: '1.14286em',
-      marginLeft: '-.04em',
-      color: 'rgba(255, 255, 255, 0.7)'
-    },
-    display3: {
-      fontSize: '3.5rem',
+    // display1: {
+    //   fontSize: '6.85714285714286rem',
+    //   fontWeight: 400,
+    //   // eslint-disable-next-line
+    //   fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    //   lineHeight: '1.20588em',
+    //   color: 'rgba(255, 255, 255, 0.7)'
+    // },
+    // display2: {
+    //   fontSize: '4.28571428571429rem',
+    //   fontWeight: 400,
+    //   // eslint-disable-next-line
+    //   fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    //   lineHeight: '1.13333em',
+    //   marginLeft: '-.02em',
+    //   color: 'rgba(255, 255, 255, 0.7)'
+    // },
+    display1: {
+      fontSize: '3.42857142857143rem',
       fontWeight: 400,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
@@ -171,22 +178,37 @@ const theme = createMuiTheme({
       color: 'rgba(255, 255, 255, 0.7)'
     },
     display2: {
-      fontSize: '2.8125rem',
-      fontWeight: 400,
+      fontSize: '2.42857142857143rem',
+      fontWeight: 300,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      lineHeight: '1.13333em',
-      marginLeft: '-.02em',
+      letterSpacing: '-.04em',
+      lineHeight: '1.14286em',
+      marginLeft: '-.04em',
       color: 'rgba(255, 255, 255, 0.7)'
     },
-    display1: {
-      fontSize: '2.125rem',
-      fontWeight: 400,
+    display3: {
+      fontSize: '1.71428571428571rem',
+      fontWeight: 300,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      lineHeight: '1.20588em',
+      letterSpacing: '-.04em',
+      lineHeight: '1.14286em',
+      marginLeft: '-.04em',
       color: 'rgba(255, 255, 255, 0.7)'
     },
+    display4: {
+      fontSize: '1.42857142857143rem',
+      fontWeight: 300,
+      // eslint-disable-next-line
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      letterSpacing: '-.04em',
+      lineHeight: '1.14286em',
+      marginLeft: '-.04em',
+      color: 'rgba(255, 255, 255, 0.7)'
+    },
+
+
     headline: {
       fontSize: '1.5rem',
       fontWeight: 400,
@@ -203,7 +225,15 @@ const theme = createMuiTheme({
       lineHeight: '1.16667em',
       color: '#fff'
     },
-    subheading: {
+    subtitle1: {
+      fontSize: '1.14285714285714rem',
+      fontWeight: 400,
+      // eslint-disable-next-line
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      lineHeight: '1.5em',
+      color: '#fff'
+    },
+    subtitle2: {
       fontSize: '1rem',
       fontWeight: 400,
       // eslint-disable-next-line
@@ -211,38 +241,47 @@ const theme = createMuiTheme({
       lineHeight: '1.5em',
       color: '#fff'
     },
-    body2: {
-      fontSize: '0.875rem',
-      fontWeight: 500,
-      // eslint-disable-next-line
-      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      lineHeight: '1.71429em',
-      color: '#fff'
-    },
     body1: {
-      fontSize: '0.875rem',
+      fontSize: '1.14285714285714rem',
       fontWeight: 400,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
       lineHeight: '1.46429em',
       color: '#fff'
     },
+    body2: {
+      fontSize: '1rem',
+      fontWeight: 400,
+      // eslint-disable-next-line
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      lineHeight: '1.46429em',
+      color: '#fff'
+    },
+    button: {
+      fontSize: '1rem',
+      textTransform: 'uppercase',
+      fontWeight: 500,
+      // eslint-disable-next-line
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      color: '#fff'
+    },
     caption: {
-      fontSize: '0.75rem',
+      fontSize: '0.857142857142857rem',
       fontWeight: 400,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
       lineHeight: '1.375em',
       color: 'rgba(255, 255, 255, 0.7)'
     },
-    button: {
-      fontSize: '0.875rem',
-      textTransform: 'uppercase',
-      fontWeight: 500,
+    overline: {
+      fontSize: '0.714285714285714rem',
+      fontWeight: 400,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      color: '#fff'
-    }
+      lineHeight: '1.375em',
+      color: 'rgba(255, 255, 255, 0.7)'
+    },
+
   },
   shape: {
     'borderRadius': 4

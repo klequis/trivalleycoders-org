@@ -3,22 +3,19 @@ import {
   withStyles,
 } from '@material-ui/core'
 import Community from 'ui/Community'
-import School from 'ui/School'
-import MoreThanCoding from 'ui/MoreThanCoding'
-import Events from 'ui/Events'
-import Sponsors from 'ui/Sponsors'
+// import School from 'ui/School'
+// import MoreThanCoding from 'ui/MoreThanCoding'
+// import Events from 'ui/Events'
+// import Sponsors from 'ui/Sponsors'
 // import Header from 'ui/Header'
 // import AppBar from 'ui/AppBar'
 
 const Home = ({ classes }) => {
   return (
-    <div id='app-wrapper' className={classes.appWrapper}>
+    <React.Fragment>
       <Community />
-      <School />
-      <MoreThanCoding />
-      <Events />
-      <Sponsors />
-    </div>
+
+    </React.Fragment>
   )
 }
 
@@ -31,3 +28,10 @@ const styles = {
 }
 
 export default withStyles(styles)(Home)
+
+/*
+    <School />
+      <MoreThanCoding />
+      <Events />
+      <Sponsors />
+*/

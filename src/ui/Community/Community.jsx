@@ -1,12 +1,15 @@
 import React from 'react'
 import {
   withStyles,
+  Grid,
 } from '@material-ui/core'
 /* User */
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
-import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Section, { white } from 'ui/ui-elements/Section'
-import Text from 'ui/ui-elements/Text'
+import Display1 from 'ui/ui-elements/Display1'
+import Display2 from 'ui/ui-elements/Display2'
+import Headline from 'ui/ui-elements/Headline'
+import Display3 from 'ui/ui-elements/Display3'
 import MeetupButton from 'ui/ui-elements/MeetupButton'
 /* Dev */
 // eslint-disable-next-line
@@ -16,93 +19,76 @@ const iCommunity = 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/co
 
 const Community = ({ classes }) => {
   return (
-    <div className={classes.appBarSpacing}>
-      <Section id='community' color={white}>
-        <div className={classes.content}>
+    <Section id='community' spacing={40}>
 
-          <div className={classes.imageDiv}>
-            <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
-          </div>
+      <Grid
+        item
+        className={classes.bgBlue}
+        xs={12}
+        sm={12}
+        md={6}
+        lg={6}
+        xl={6}
+      >
+        <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
+      </Grid>
 
-          <div className={classes.headlineDiv}>
-            <Text
-              variant='display2'
-            >
-              Community
-            </Text>
-            <Text
-              align='center'
-              shade='dark'
-              classNames={[classes.headline]}
-              variant='display1'
-            >
-              Developers helping developers
-            </Text>
-            <MeetupButton />
-          </div>
+      <Grid
+        item
+        container
+        className={classes.bgRed}
+        xs={12}
+        sm={12}
+        md={6}
+        lg={6}
+        xl={6}
+        direction='column'
+        justify='space-around'
+        // alignItems='space-between'
 
+      >
+        <Display2
+          align='center'
+          className={classes.community}
+        >
+          Community
+        </Display2>
+        <Display3
+          align='center'
+          className={classes.developers}
+        >
+          Developers helping developers
+        </Display3>
+        <div className={classes.join}>
+          <MeetupButton />
         </div>
-      </Section>
-    </div>
+      </Grid>
+
+    </Section>
   )
 }
 
-//937.333
 const styles = theme => ({
-  appBarSpacing: {
-    paddingTop: '100px',
-  },
-  headline: {
-
-    [theme.breakpoints.up('md')]: {
-      textAlign: 'center',
-    },
-  },
-  imageDiv: {
-    flexBasis: '50%',
+  community: {
+    // backgroundColor: 'red',
     [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing.unit * 2
+      marginBottom: '20px'
     },
   },
-  headlineDiv: {
-    display: 'flex',
-    flexFlow: 'column nowrap',
-
-
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    // alignContent: 'space-between',
-
-
-    flexBasis: '50%',
-    padding: '2% 4% 2% 4%',
-    margin: 0,
+  developers: {
     [theme.breakpoints.down('sm')]: {
-      padding: 0
+      marginBottom: '20px'
     },
-    backgroundColor: 'purple',
   },
-  content: {
+  bgBlue: {
+    // backgroundColor: 'blue'
+  },
+  join: {
     display: 'flex',
-    alignItems: 'stretch',
-    [theme.breakpoints.down('xs')]: {
-      flexFlow: 'column',
-    },
-    [theme.breakpoints.up('sm')]: {
-      flexFlow: 'column',
-    },
-    [theme.breakpoints.up('md')]: {
-      flexFlow: 'row',
-      justifyContent: 'space-between',
-    },
-    [theme.breakpoints.up('lg')]: {
-      margin: theme.spacing.unit * 2,
-    },
-    [theme.breakpoints.up('xl')]: {
-      margin: theme.spacing.unit * 2,
-    },
-    backgroundColor: 'black',
+    justifyContent: 'center'
   }
+
+
 })
 
 export default withStyles(styles)(Community)

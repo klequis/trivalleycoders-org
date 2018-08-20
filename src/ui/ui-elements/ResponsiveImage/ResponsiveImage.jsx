@@ -7,6 +7,8 @@ const styles = {
     display: 'block',
     maxWidth: '100%',
     height: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 }
 

@@ -33,10 +33,10 @@ const SponsorsGrid = ({ classes }) => {
             spacing={40}
           >
             {data.map(l => (
-              <Grid key={l.name} item className={classes.item}>
+              <Grid key={l.title} item className={classes.item}>
                 <Sponsor
                   height={l.height}
-                  name={l.name}
+                  title={l.title}
                   src={l.imageUrl}
                   width={l.width}
                 />

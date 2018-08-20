@@ -50,6 +50,7 @@ const styles = theme => ({
     [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
+    marginBottom: 40,
   },
   showSm: {
     [theme.breakpoints.down('xs')]: {
@@ -64,6 +65,7 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       display: 'none',
     },
+    marginBottom: 40,
   },
   showMd: {
     [theme.breakpoints.down('sm')]: {
@@ -78,6 +80,7 @@ const styles = theme => ({
     [theme.breakpoints.up('lg')]: {
       display: 'none',
     },
+    marginBottom: 40,
   },
   showLg: {
     [theme.breakpoints.down('md')]: {
@@ -93,6 +96,7 @@ const styles = theme => ({
     [theme.breakpoints.up('xl')]: {
       display: 'none',
     },
+    marginBottom: 40,
   },
   showXl: {
     [theme.breakpoints.down('lg')]: {
@@ -104,6 +108,7 @@ const styles = theme => ({
       paddingBottom: theme.spacing.unit,
       paddingTop: theme.spacing.unit,
     },
+    marginBottom: 40,
   },
 })
 

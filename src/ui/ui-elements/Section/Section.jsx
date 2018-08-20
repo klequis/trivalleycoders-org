@@ -2,6 +2,7 @@ import React from 'react'
 import {
   withStyles,
 } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
 // eslint-disable-next-line
 import { green } from 'logger'
 
@@ -11,7 +12,8 @@ export const white = 'white'
 
 // import { grey } from '@material-ui/core/colors'
 
-const Section = ({ classes, color='white', id, children }) => {
+const Section = ({ classes, color='white', id, children, spacing }) => {
+  green('spacing', spacing)
   // const sectionStyle = color => {
   //   switch (color) {
   //     case grey:
@@ -26,52 +28,62 @@ const Section = ({ classes, color='white', id, children }) => {
   // }
   // green(`sectionStyle: ${id}` , sectionStyle(color))
   return (
+
     <section id={`section-outer-${id}`} className={`${classes.outer}`}>
-      <section id={`section-inner-${id}`} className={`${classes.inner} ${classes.test}`}>
+      <Grid container spacing={spacing}>
         {children}
-      </section>
+      </Grid>
     </section>
   )
 }
 
+// <section id={`section-inner-${id}`} className={`${classes.inner} $
 // <section id={`section-outer-${id}`} className={`${sectionStyle(color)} ${classes.outer}`}>
 
 
 
 const styles = theme => ({
-  // divider: {
-  //   height: 0.5,
-	//   backgroundImage: 'linear-gradient(to right, #F79533,#F37055,#EF4E7B,#A166AB,#5073B8,#1098AD,#07B39B,#6FBA82)',
-  // },
+
   outer: {
-    paddingBottom: '28px',
+    padding: '0 10% 28px 10%',
+    [theme.breakpoints.down('sm')]: {
+      padding: 0
+    },
+
     // backgroundColor: 'red',
   },
-  bgGrey: {
-    // backgroundColor: theme.palette.common.background.medium,
-    width: '100vw',
-    minHeight: '100px'
-  },
-  bgDarkGrey: {
-    // backgroundColor: theme.palette.common.background.dark,
-    width: '100vw',
-    minHeight: '100px'
-  },
-  bgWhite: {
-    // backgroundColor: theme.palette.common.background.light,
-    width: '100vw',
-    minHeight: '100px'
-  },
   inner: {
-    // backgroundColor: 'purple',
     width: '80vw',
     minHeight: '100px',
-    // border: '1px green solid',
     margin: '0 auto',
     display: 'flex',
     flexFlow: 'column nowrap',
     alignItems: 'center',
+    // border: '1px green solid',
+    // backgroundColor: 'purple',
   },
+
+  bgGrey: {
+    width: '100vw',
+    minHeight: '100px'
+    // backgroundColor: theme.palette.common.background.medium,
+  },
+  bgDarkGrey: {
+    width: '100vw',
+    minHeight: '100px'
+    // backgroundColor: theme.palette.common.background.dark,
+  },
+  bgWhite: {
+    width: '100vw',
+    minHeight: '100px'
+    // backgroundColor: theme.palette.common.background.light,
+  },
+
 })
 
 export default withStyles(styles)(Section)
+
+// divider: {
+  //   height: 0.5,
+	//   backgroundImage: 'linear-gradient(to right, #F79533,#F37055,#EF4E7B,#A166AB,#5073B8,#1098AD,#07B39B,#6FBA82)',
+  // },

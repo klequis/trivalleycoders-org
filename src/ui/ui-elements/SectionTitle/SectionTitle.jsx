@@ -17,7 +17,6 @@ const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
   //     ? theme.palette.common.headings.dark
   //     : theme.palette.common.headings.light
   // }
-  green('theme', theme)
   return (
     <Typography
       variant='display1'
