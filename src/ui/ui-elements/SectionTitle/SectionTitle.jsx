@@ -19,7 +19,7 @@ const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
   // }
   return (
     <Typography
-      variant='display1'
+      variant='display2'
       align='center'
       className={classes.root}
       // style={fontColor}

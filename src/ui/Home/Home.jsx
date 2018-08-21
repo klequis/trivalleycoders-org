@@ -3,9 +3,9 @@ import {
   withStyles,
 } from '@material-ui/core'
 import Community from 'ui/Community'
-import School from 'ui/School'
+import Skills from 'ui/Skills'
 // import MoreThanCoding from 'ui/MoreThanCoding'
-// import Events from 'ui/Events'
+import Events from 'ui/Events'
 // import Sponsors from 'ui/Sponsors'
 // import Header from 'ui/Header'
 // import AppBar from 'ui/AppBar'
@@ -13,8 +13,8 @@ import School from 'ui/School'
 const Home = ({ classes }) => {
   return (
     <React.Fragment>
-      <Community />
-      <School />
+      <Events />
+
     </React.Fragment>
   )
 }
@@ -30,8 +30,10 @@ const styles = {
 export default withStyles(styles)(Home)
 
 /*
-
+//
+<Community />
+      <Skills />
       <MoreThanCoding />
-      <Events />
+
       <Sponsors />
 */

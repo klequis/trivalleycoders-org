@@ -2,6 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 
+const ResponsiveImage = ({ alt, classes, src}) => {
+  return (
+    <img src={src} alt={alt} className={classes.imgFluid} />
+  )
+}
+
 const styles = {
   imgFluid: {
     display: 'block',
@@ -10,12 +16,6 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
   },
-}
-
-const ResponsiveImage = ({ alt, classes, src}) => {
-  return (
-    <img src={src} alt={alt} className={classes.imgFluid} />
-  )
 }
 
 export default withStyles(styles)(ResponsiveImage)

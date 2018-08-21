@@ -4,11 +4,11 @@ import {
   Grid,
 } from '@material-ui/core'
 /* User */
-import TechIcons from './TechIcons'
 import Section from 'ui/ui-elements/Section'
 import Display2 from 'ui/ui-elements/Display2'
 import Display3 from 'ui/ui-elements/Display3'
-import Display4 from 'ui/ui-elements/Display4'
+import MediaPaper from 'ui/ui-elements/MediaPaper'
+import { logoData } from './logoData'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
@@ -16,6 +16,7 @@ import { green } from 'logger'
 const School = ({ classes }) => {
   return (
     <Section id='school'>
+
       <Grid
         item
         container
@@ -26,36 +27,52 @@ const School = ({ classes }) => {
         xl={6}
         direction='column'
         justify='space-around'
-        // className={classes.bgRed}
+        className={classes.bgRed}
+        spacing={40}
       >
-        <Display2
-          align='center'
-        >
+        <Display2>
           Gain Skills
         </Display2>
-        <Display4
-          align='center'
-        >
+        <Display3>
           More than "coding"
-        </Display4>
+        </Display3>
 
-        <Display3
-          align='center'
-        >
-          Making software!
+        <Display3>
+          Making software
         </Display3>
       </Grid>
+
+
+
+
       <Grid
         item
+        container
         xs={12}
         sm={12}
         md={6}
         lg={6}
         xl={6}
-        // className={classes.bgGreen}
+        spacing={40}
+        className={classes.bgGreen}
       >
-        <TechIcons />
+        {
+          logoData.map(l => (
+            <Grid item key={l.name} className={classes.item}>
+              <MediaPaper
+                height={l.height}
+                name={l.name}
+                src={l.img}
+                width={l.width}
+              />
+            </Grid>
+          ))
+        }
+
       </Grid>
+
+
+
 
     </Section>
   )

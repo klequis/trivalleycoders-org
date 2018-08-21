@@ -14,9 +14,9 @@ import { green as greenl } from 'logger'
     See: https://material-ui.com/api/typography/#typography
 */
 
-const variant='display1'
+const variant='body2'
 
-const Display1 = ({
+const Body2 = ({
   align,
   children,
   classes,
@@ -61,4 +61,4 @@ const styles = theme => {
     }
   })
 }
-export default withStyles(styles, { withTheme: true })(Display1)
+export default withStyles(styles, { withTheme: true })(Body2)

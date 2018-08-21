@@ -22,16 +22,18 @@ const Headline = ({
   classes,
   className,
   color,
+  gutter,
   noWrap,
 }) => {
   // greenl('theme', theme)
   return (
     <Typography
       align={align}
-      className={classNames([classes[variant], className ])}
+      className={classNames([classes[variant], classes.gutterBottom, className ])}
       color={color}
       noWrap={noWrap}
       variant={variant}
+      gutterBottom={false}
     >
       {children}
     </Typography>
@@ -57,6 +59,9 @@ const styles = theme => {
       [theme.breakpoints.up('xl')]: {
         fontSize: originalSize,
       },
+    },
+    gutterBottom: {
+      marginBottom: '1.4em',
     }
   })
 }
