@@ -5,13 +5,9 @@ import {
 } from '@material-ui/core'
 /* User */
 import Section from 'ui/ui-elements/Section'
-import Display2 from 'ui/ui-elements/Display2'
-import Display3 from 'ui/ui-elements/Display3'
-import MediaPaper from 'ui/ui-elements/MediaPaper'
 import Logo from './Logo'
-import { row1, row2 } from './logoData'
+import { row1 } from './logoData'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
-import Body2 from 'ui/ui-elements/Body2'
 import Headline from 'ui/ui-elements/Headline'
 /* Dev */
 // eslint-disable-next-line
@@ -37,15 +33,16 @@ const Skills = ({ classes }) => {
 
           return (
             <Grid
+              key={l.name}
               id='grid-item'
               item
-              className={classes.item}
               xs={12}
               md={6}
               container
               justify='center'
             >
               <Logo
+                alt={l.name}
                 paperWidth={300}
                 src={l.img}
                 imageHeight={l.height}

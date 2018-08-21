@@ -2,34 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
+import A from 'ui/ui-elements/A'
 
 /* Dev */
 import { green } from 'logger'
 
-const Sponsor = ({ classes, height, width, src, title, subTitle }) => {
+const Sponsor = ({ classes, height, href, width, src, title, subTitle }) => {
+  green('sponsor: href', href)
   return (
-    <Card className={classes.card}>
-
-      <CardContent>
-        <Typography gutterBottom variant="headline" component="h2">
-          Lizard
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+    <A href={href}>
+      <Card className={classes.card}>
+        <ResponsiveImage src={src} alt={title} />
+      </Card>
+    </A>
   );
 }
 

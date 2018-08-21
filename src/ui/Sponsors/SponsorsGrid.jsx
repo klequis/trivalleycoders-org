@@ -8,6 +8,7 @@ const data = [
     title: 'Zelda Kohn',
     subTitle: 'For all your real estate needs in the Tri-Valley',
     imageUrl: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/zelda.png',
+    href: 'https://www.remax.com/realestateagentoffice/pleasanton-ca-94588-2723-zeldakohn-id31079164.html',
     height: 181,
     width: 340.298,
   },
@@ -15,6 +16,7 @@ const data = [
     title: 'BRIIA',
     subTitle: 'Bishop Ranch Intelligence Innovation Accelerator',
     imageUrl: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/briia-logo.png',
+    href: 'https://briia.io/',
     height: 180,
   }
 ]
@@ -36,8 +38,9 @@ const SponsorsGrid = ({ classes }) => {
               <Grid key={l.title} item className={classes.item}>
                 <Sponsor
                   height={l.height}
-                  title={l.title}
+                  href={l.href}
                   src={l.imageUrl}
+                  title={l.title}
                   width={l.width}
                 />
               </Grid>

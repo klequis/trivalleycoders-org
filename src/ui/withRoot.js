@@ -3,9 +3,6 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core'
 // import { blue } from '@material-ui/core/colors'
 
-
-// A theme with custom primary and secondary color.
-// It's optional.
 const theme = createMuiTheme({
   breakpoints: {
     keys: [
@@ -246,15 +243,15 @@ const theme = createMuiTheme({
       fontWeight: 400,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      lineHeight: '1.46429em',
+      lineHeight: '1.14629em',
       color: '#fff'
     },
     body2: {
-      fontSize: '1rem',
-      fontWeight: 400,
+      fontSize: '1.14285714285714rem',
+      fontWeight: 500,
       // eslint-disable-next-line
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-      lineHeight: '1.46429em',
+      lineHeight: '1.71429em',
       color: '#fff'
     },
     button: {

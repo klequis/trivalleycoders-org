@@ -5,7 +5,7 @@ import { Paper } from '@material-ui/core'
 
 import { green } from 'logger'
 
-const ResponsiveImage = ({ alt, classes, src, imageHeight, imageWidth, paperHeight, paperWidth }) => {
+const Logo = ({ alt, classes, src, imageHeight, imageWidth, paperHeight, paperWidth }) => {
   const paperStyle = {
     height: 88,
     width: paperWidth
@@ -46,9 +46,9 @@ const styles = theme => ({
   }
 })
 
-export default withStyles(styles)(ResponsiveImage)
+export default withStyles(styles)(Logo)
 
-ResponsiveImage.propTypes = {
+Logo.propTypes = {
   alt: PropTypes.string.isRequired,
   classes: PropTypes.object.isRequired,
 }

@@ -24,7 +24,9 @@ const Body2 = ({
   color,
   noWrap,
 }) => {
-  // greenl('theme', theme)
+  greenl('classNames',classNames([classes[variant], className ]))
+  greenl('className', className)
+
   return (
     <Typography
       align={align}
@@ -39,7 +41,7 @@ const Body2 = ({
 }
 const styles = theme => {
   const originalSize = theme.typography[variant].fontSize
-
+  greenl('originalSize', originalSize)
 
   return ({
     [variant]: {
