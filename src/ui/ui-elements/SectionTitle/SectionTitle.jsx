@@ -1,8 +1,9 @@
 import React from 'react'
 import {
-  Typography,
   withStyles,
 } from '@material-ui/core'
+import Display2 from 'ui/ui-elements/Display2'
+
 import { green } from 'logger'
 
 /*
@@ -18,14 +19,13 @@ const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
   //     : theme.palette.common.headings.light
   // }
   return (
-    <Typography
-      variant='display2'
+    <Display2
       align='center'
       className={classes.root}
       // style={fontColor}
     >
       {children}
-    </Typography>
+    </Display2>
   )
 }
 
@@ -33,6 +33,7 @@ const styles = theme => ({
   root: {
     marginBottom: theme.spacing.unit * 3,
     marginTop: theme.spacing.unit * 3,
+    width: '100%',
   }
 })
 export default withStyles(

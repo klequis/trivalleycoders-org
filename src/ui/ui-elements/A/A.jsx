@@ -1,15 +1,15 @@
 import React from 'react'
-import Text from 'ui/ui-elements/Text'
+import Body1 from 'ui/ui-elements/Body1'
 
 const A = (props) => {
   return (
     <a href={props.href}>
-      <Text
+      <Body1
         variant='body1'
         color='green'
       >
         {props.children}
-      </Text>
+      </Body1>
     </a>
   )
 }
