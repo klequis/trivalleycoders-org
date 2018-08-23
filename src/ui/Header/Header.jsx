@@ -13,12 +13,11 @@ import { green } from 'logger'
 
 const Header = ({ classes }) => {
   return (
-    <Section>
+    <Section id='header'>
       <Grid
         item
         xs={12}
         justify='center'
-        className={classes.bgPurple}
       >
         <div id='tvc' className={classes.tvc}>
           <span className={classes.wordTrivalleyDesktop}>TriValley</span>
@@ -36,25 +35,11 @@ const Header = ({ classes }) => {
 
 
 const styles = {
-  bgPurple: {
-    // backgroundColor: 'purple'
-  },
   tvc: {
-    // backgroundColor: 'blue',
     textAlign: 'center',
     lineHeight: '2.6rem',
     marginBottom: '0.5rem',
-    // alignItems: 'baseline',
-    // display: 'flex',
-    // flexFlow: 'row nowrap',
-    // width: '100%',
-
-
-    // justifyContent: 'flex-start',
-    // textAlign: 'left',
-    // flexGrow: 10,
   },
-
   wordTrivalleyDesktop: {
     color: 'white',
     // eslint-disable-next-line

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   withStyles,
 } from '@material-ui/core'
@@ -22,8 +23,9 @@ export const white = 'white'
 const Section = ({
   alignContent,
   alignItems,
+  className,
   classes,
-  color='white',
+  color='transparent',
   children,
   direction,
   id,
@@ -31,12 +33,21 @@ const Section = ({
   spacing,
   wrap,
 }) => {
+
+  const outerStyle = {
+    backgroundColor: color
+  }
   return (
 
-    <section id={`section-outer-${id}`} className={`${classes.outer}`}>
+    <section
+      id={`section-outer-${id}`}
+      className={`${classes.outer}`}
+      style={outerStyle}
+    >
       <Grid
         alignContent={alignContent}
         alignItems={alignItems}
+        className={className}
         container
         justify={justify}
         direction={direction}
@@ -49,14 +60,19 @@ const Section = ({
   )
 }
 
+Section.propTypes = {
+  id: PropTypes.string.isRequired
+}
+
 const styles = theme => ({
 
   outer: {
     padding: '0 10% 0 10%',
+
     [theme.breakpoints.down('sm')]: {
       padding: 0
     },
-
+    // paddingBottom: theme.spacing.unit
     // backgroundColor: 'red',
   },
 })

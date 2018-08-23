@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import { Paper } from '@material-ui/core'
-
+/* Dev */
+// eslint-disable-next-line
 import { green } from 'logger'
 
 const Logo = ({ alt, classes, src, imageHeight, imageWidth, paperHeight, paperWidth }) => {
@@ -34,15 +35,9 @@ const styles = theme => ({
     marginRight: 'auto',
   },
   paper: {
-    // padding: theme.spacing.unit * 3,
     display: 'flex',
     alignItems: 'center',
-
-    // width: 300,
     height: '100%',
-    // [theme.breakpoints.down('sm')]: {
-    //   width: '80%'
-    // },
   }
 })
 

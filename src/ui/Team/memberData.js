@@ -10,35 +10,40 @@ export const members = [
     id: '7a8a0c654b89f157524be1b68adf9dbecc4f1db0',
     picture: pCarl,
     name: 'Carl',
-    role: 'Organizer Software Developer',
+    role: 'Organizer',
+    title: 'Developer',
     url: 'https://www.linkedin.com/in/carlbecker/'
   },
   {
     id: '107',
     picture: pHema,
     name: 'Hemalatha',
-    role: 'Web Developer',
+    role: '',
+    title: 'Developer',
     url: 'https://www.linkedin.com/in/hemalatha-manickam-890695/',
   },
   {
     id: 106,
     picture: pKevin,
     name: 'Kevin',
-    role: 'Web Developer',
+    role: 'Co-organizer',
+    title: 'Developer',
     url: 'https://www.linkedin.com/in/kevinsmithwebdev/'
   },
   {
     id: 103,
     picture: pLaura,
     name: 'Laura',
-    role: 'Co-organizer Web Developer',
+    role: 'Co-organizer',
+    title: 'Developer',
     url: 'https://www.linkedin.com/in/laura-silvey-29a6451a/'
   },
   {
     id: 105,
     picture: pNathan,
     name: 'En Zyme',
-    role: 'Python & Data Science',
+    role: 'Co-organizer',
+    title: 'Python & Data Science',
     url: 'http://www.40thparallelpython.com/'
 
   },

@@ -17,7 +17,7 @@ const data = [
     subTitle: 'Bishop Ranch Intelligence Innovation Accelerator',
     imageUrl: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/briia-logo.png',
     href: 'https://briia.io/',
-    height: 180,
+    height: 159,
   }
 ]
 
@@ -55,15 +55,6 @@ const SponsorsGrid = ({ classes }) => {
 const styles = theme => ({
   root: {
     flexGrow: 1
-  },
-  paper: {
-    backgroundColor: 'transparant',
-  },
-  control: {
-    padding: theme.spacing.unit * 2
-  },
-  gridBottom: {
-    marginTop: 40,
   },
 })
 

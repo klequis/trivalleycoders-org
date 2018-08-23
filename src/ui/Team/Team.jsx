@@ -41,6 +41,7 @@ const Team = () => {
                 src={m.picture}
                 name={m.name}
                 role={m.role}
+                title={m.title}
                 url={m.url}
                 imageHeight={200}
                 imageWidth={200}

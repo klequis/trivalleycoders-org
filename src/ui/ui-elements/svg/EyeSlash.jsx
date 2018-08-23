@@ -1,0 +1,58 @@
+import React from 'react'
+
+const data = 'M286.693 391.984l32.579 46.542A333.958 333.958 0 0 1 288 440C168.19 440 63.031 376.051 6.646 280.369a47.999 47.999 0 0 1 0-48.739c24.023-40.766 56.913-75.775 96.024-102.537l57.077 81.539C154.736 224.82 152 240.087 152 256c0 74.736 60.135 135.282 134.693 135.984zm282.661-111.615c-31.667 53.737-78.747 97.46-135.175 125.475l.011.015 41.47 59.2c7.6 10.86 4.96 25.82-5.9 33.42l-13.11 9.18c-10.86 7.6-25.82 4.96-33.42-5.9L100.34 46.94c-7.6-10.86-4.96-25.82 5.9-33.42l13.11-9.18c10.86-7.6 25.82-4.96 33.42 5.9l51.038 72.617C230.68 75.776 258.905 72 288 72c119.81 0 224.969 63.949 281.354 159.631a48.002 48.002 0 0 1 0 48.738zM424 256c0-75.174-60.838-136-136-136-17.939 0-35.056 3.473-50.729 9.772l19.299 27.058c25.869-8.171 55.044-6.163 80.4 7.41h-.03c-23.65 0-42.82 19.17-42.82 42.82 0 23.626 19.147 42.82 42.82 42.82 23.65 0 42.82-19.17 42.82-42.82v-.03c18.462 34.49 16.312 77.914-8.25 110.95v.01l19.314 27.061C411.496 321.2 424 290.074 424 256zM262.014 356.727l-77.53-110.757c-5.014 52.387 29.314 98.354 77.53 110.757z'
+
+const id='a593fb08'
+
+const Code = ({
+  startColor='#f7953f',
+  endColor='#fff',
+  width,
+  opacity=1,
+}) => {
+  console.log('start', startColor)
+  const sizeStyle = {
+    width: width,
+  }
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 576 512"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      externalResourcesRequired="http://purl.org/dc/dcmitype/StillImage"
+      style={sizeStyle}
+    >
+    <linearGradient
+      id={id}
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="0%"
+      >
+        <stop
+          offset='0%'
+          style={{
+            stopColor: startColor,
+            stopOpacity: 1 * opacity
+          }}
+        />
+        <stop
+          offset='100%'
+          style={{
+            stopColor: endColor,
+            stopOpacity: 1 * opacity
+          }}
+        />
+    />
+
+    </linearGradient>
+    <path
+      style={{ fill: `url(#${id})`, fillOpacity: 1 }}
+      d={data}
+
+    />
+  </svg>
+  )
+}
+
+export default Code

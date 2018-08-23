@@ -34,7 +34,7 @@ class Events extends Component {
 
   renderEvents = (events) => {
     return (
-      <Section id='events' color={darkGrey}>
+      <Section id='events'>
         <SectionTitle>Free Events</SectionTitle>
         <EventsGrid events={events} />
       </Section>

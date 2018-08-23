@@ -29,7 +29,6 @@ const Body1 = ({
     <Typography
       align={align}
       className={classNames([classes[variant], className ])}
-      color={color}
       noWrap={noWrap}
       variant={variant}
     >

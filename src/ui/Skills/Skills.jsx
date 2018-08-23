@@ -58,35 +58,10 @@ const Skills = ({ classes }) => {
 }
 
 const styles = theme => ({
-  gridItem: {
-    backgroundColor: 'green'
-  },
-  // headline: {
-  //   marginBottom: theme.spacing.unit * 2
-  // },
   titles: {
-    // paddingTop: theme.spacing.unit,
-    // paddingBottom: theme.spacing.unit,
-    // height: theme.spacing.unit * 4000
     display: 'flex',
     flexFlow: 'column',
     alignItems: 'center',
   },
-  row1: {
-    backgroundColor: 'purple',
-    // margin: theme.spacing.uinit * 3
-    // paddingTop: theme.spacing.unit * 4,
-    // paddingBottom: theme.spacing.unit * 4,
-    // margin: 40,
-  },
-  bottomRow: {
-    // backgroundColor: 'green'
-    // paddingTop: theme.spacing.unit * 4,
-    // paddingBottom: theme.spacing.unit * 4,
-
-  },
-  skills: {
-    backgroundColor: 'purple'
-  }
 })
 export default withStyles(styles)(Skills)

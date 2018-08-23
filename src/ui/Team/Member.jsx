@@ -4,14 +4,16 @@ import { withStyles } from '@material-ui/core/styles'
 import { Paper } from '@material-ui/core'
 import Body1 from 'ui/ui-elements/Body1'
 import Body2 from 'ui/ui-elements/Body2'
+import A from 'ui/ui-elements/A'
 import { green } from 'logger'
 
-const Member = ({ alt, classes, src, imageHeight, imageWidth, name, paperWidth, role }) => {
+const Member = ({ alt, classes, src, imageHeight, imageWidth, name, paperWidth, role, title, url }) => {
   const paperStyle = {
     // height: 88,
     width: paperWidth
   }
   return (
+    <A href={url}>
     <Paper id='paper' className={classes.paper} style={paperStyle}>
       <img
         src={src}
@@ -33,7 +35,15 @@ const Member = ({ alt, classes, src, imageHeight, imageWidth, name, paperWidth, 
       >
         {role}
       </Body1>
+      <Body1
+        align='center'
+        className={classes.body1}
+        gutterBottom={true}
+      >
+        {title}
+      </Body1>
     </Paper>
+    </A>
   )
 }
 

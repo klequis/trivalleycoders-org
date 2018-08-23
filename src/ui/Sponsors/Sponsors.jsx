@@ -3,17 +3,17 @@ import {
   withStyles,
 } from '@material-ui/core'
 /* User */
-import Section, { darkGrey } from 'ui/ui-elements/Section'
+import Section from 'ui/ui-elements/Section'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
 import SponsorsGrid from './SponsorsGrid'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
 
-const School = ({ classes }) => {
+const School = () => {
   return (
-    <Section id='sponsors' color={darkGrey}>
-      <SectionTitle bgColor='dark'>
+    <Section id='sponsors'>
+      <SectionTitle>
         Our Sponsors
       </SectionTitle>
       <SponsorsGrid />

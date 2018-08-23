@@ -32,7 +32,7 @@ const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
 const styles = theme => ({
   root: {
     marginBottom: theme.spacing.unit * 3,
-    marginTop: theme.spacing.unit * 3,
+    // marginTop: theme.spacing.unit * 3,
     width: '100%',
   }
 })

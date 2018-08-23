@@ -6,9 +6,7 @@ import {
 /* User */
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
 import Section, { white } from 'ui/ui-elements/Section'
-import Display1 from 'ui/ui-elements/Display1'
 import Display2 from 'ui/ui-elements/Display2'
-import Headline from 'ui/ui-elements/Headline'
 import Display3 from 'ui/ui-elements/Display3'
 import MeetupButton from 'ui/ui-elements/MeetupButton'
 /* Dev */
@@ -70,7 +68,6 @@ const Community = ({ classes }) => {
 
 const styles = theme => ({
   community: {
-    // backgroundColor: 'red',
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px'
     },
@@ -79,9 +76,6 @@ const styles = theme => ({
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px'
     },
-  },
-  bgBlue: {
-    // backgroundColor: 'blue'
   },
   join: {
     display: 'flex',

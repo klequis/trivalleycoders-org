@@ -98,14 +98,6 @@ const styles = {
   },
   cardContent: {
     padding: '5px 15px 5px 15px',
-    // borderBottom: 'solid 0.5px gray',
-  },
-  image: {
-    margin: 'auto',
-    width: '100%',
-  },
-  container: {
-    paddingBottom: '40px'
   },
   item: {
     margin: '30px',
@@ -117,15 +109,6 @@ const styles = {
   media: {
     height: 0,
     paddingTop: '55.170%',
-  },
-  root: {
-    flexGrow: 1,
-  },
-  time: {
-    overflow: 'hidden',
-    paddingTop: '.4rem',
-    whiteSpace: 'nowrap',
-    textOverflow: 'ellipsis',
   },
   title: {
     height: '40px',
