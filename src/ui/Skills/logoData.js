@@ -65,8 +65,8 @@ export const row1 = [
   {
     name: 'Node',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/nodejs.svg',
-    height: size1,
-    width: size1,
+    height: 80,
+    width: 80,
   },
   {
     name: 'MongoDB',
@@ -77,8 +77,8 @@ export const row1 = [
   {
     name: 'Express',
     img: 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/express.svg',
-    height: 51.13636362,
-    width: 180,
+    height: 46.022727258,
+    width: 162,
   },
 ]
 

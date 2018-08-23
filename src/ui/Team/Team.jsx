@@ -13,14 +13,18 @@ import SectionTitle from 'ui/ui-elements/SectionTitle'
 // eslint-disable-next-line
 import { green } from 'logger'
 
-const Team = () => {
+const Team = ({ classes }) => {
   return (
     <Section
       id='team'
       spacing={24}
       justify='center'
     >
-      <SectionTitle>Team</SectionTitle>
+      <div className={classes.title}>
+        <SectionTitle>
+          Team
+        </SectionTitle>
+      </div>
       {
         members.map(m => {
           return (
@@ -37,7 +41,7 @@ const Team = () => {
               <Member
 
                 alt={m.name}
-                paperWidth={200}
+                paperWidth={150}
                 src={m.picture}
                 name={m.name}
                 role={m.role}
@@ -55,6 +59,11 @@ const Team = () => {
   )
 }
 
-const styles = {}
+const styles = {
+  title: {
+    width: '100%',
+    marginTop: '10px',
+  }
+}
 
 export default withStyles(styles)(Team)

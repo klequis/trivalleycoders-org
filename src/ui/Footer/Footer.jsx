@@ -17,11 +17,13 @@ const Footer = ({ classes }) => {
   return (
     <Section
       id='footer'
-      spacing={8}
+      spacing={40}
       direction='row'
       justify='center'
       color='#161616'
+
     >
+    <div className={classes.footer}>
       <Grid
         item
         container
@@ -30,7 +32,8 @@ const Footer = ({ classes }) => {
       >
         <Grid
           item
-          xs={1}
+          xs={6}
+          sm={3}
           container
           justify='center'
         >
@@ -38,7 +41,8 @@ const Footer = ({ classes }) => {
         </Grid>
         <Grid
           item
-          xs={1}
+          xs={6}
+          sm={3}
           container
           justify='center'
         >
@@ -46,7 +50,8 @@ const Footer = ({ classes }) => {
         </Grid>
         <Grid
           item
-          xs={1}
+          xs={6}
+          sm={3}
           container
           justify='center'
         >
@@ -54,7 +59,8 @@ const Footer = ({ classes }) => {
         </Grid>
         <Grid
           item
-          xs={1}
+          xs={6}
+          sm={3}
           container
           justify='center'
         >
@@ -79,12 +85,18 @@ const Footer = ({ classes }) => {
         </Body1>
 
       </Grid>
+      </div>
     </Section>
   )
 }
 
 
 const styles = theme => ({
+  footer: {
+    margin: '50px 0 50px 0',
+    // width: '100%',
+    maxWidth: '90%',
+  },
   body1: {
     marginTop: theme.spacing.unit * 2,
     marginBottom: theme.spacing.unit * 2,
@@ -92,18 +104,22 @@ const styles = theme => ({
   meetup: {
     color: 'white',
     fontSize: '3em',
+    margin: '10px',
   },
   github: {
     color: 'white',
     fontSize: '3em',
+    margin: '10px',
   },
   slack: {
     color: 'white',
     fontSize: '3em',
+    margin: '10px',
   },
   facebook: {
     color: 'white',
     fontSize: '3em',
+    margin: '10px',
   },
 })
 export default withStyles(styles)(Footer)

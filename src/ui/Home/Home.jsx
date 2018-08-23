@@ -9,18 +9,26 @@ import Sponsors from 'ui/Sponsors'
 import Header from 'ui/Header'
 import Team from 'ui/Team'
 import Footer from 'ui/Footer'
-import Divider from 'ui/ui-elements/Divider'
+import Divider1 from 'ui/ui-elements/Divider/Divider1'
+import Divider2 from 'ui/ui-elements/Divider/Divider2'
+import Divider3 from 'ui/ui-elements/Divider/Divider3'
+import DividerBlank from 'ui/ui-elements/Divider/DividerBlank'
 
 const Home = ({ classes }) => {
   return (
     <React.Fragment>
       <Header />
       <Community />
-      <Divider />
+      <Divider1 />
       <Skills />
+      <Divider2 />
       <Team />
+      <Divider3 />
       <Events />
+      <Divider3 />
       <Sponsors />
+      <DividerBlank />
+
       <Footer />
     </React.Fragment>
   )

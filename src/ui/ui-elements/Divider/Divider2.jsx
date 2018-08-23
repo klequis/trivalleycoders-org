@@ -3,12 +3,18 @@ import {
   withStyles,
   Grid,
 } from '@material-ui/core'
-import BugSvg from './BugSvg'
-import CodeSvg from './CodeSvg'
+
 
 import Section from 'ui/ui-elements/Section'
+import Bug from 'ui/ui-elements/svg/Bug'
+import Cog from 'ui/ui-elements/svg/Cog'
+import Desktop from 'ui/ui-elements/svg/Desktop'
+import EyeDropper from 'ui/ui-elements/svg/EyeDropper'
+import FileCode from 'ui/ui-elements/svg/FileCode'
+
 // eslint-disable-next-line
 import { green } from 'logger'
+
 
 export const darkGrey = 'darkGrey'
 export const grey = 'grey'
@@ -38,22 +44,9 @@ const Divider = ({ classes }) => {
           container
           justify='center'
         >
-          <CodeSvg
-            startColor='orange'
-            endColor='#FFF'
-            width={20}
-            opacity={0.4}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={3}
-          container
-          justify='center'
-        >
-          <BugSvg
+          <Cog
             startColor='#F79533'
-            endColor='#FFF'
+            endColor='#F37055'
             width={20}
             opacity={0.4}
           />
@@ -64,7 +57,12 @@ const Divider = ({ classes }) => {
           container
           justify='center'
         >
-
+          <Desktop
+            startColor='#EF4E7B'
+            endColor='#A166AB'
+            width={20}
+            opacity={0.4}
+          />
         </Grid>
         <Grid
           item
@@ -72,6 +70,25 @@ const Divider = ({ classes }) => {
           container
           justify='center'
         >
+          <FileCode
+            startColor='#5073B8'
+            endColor='#1098AD'
+            width={20}
+            opacity={0.4}
+          />
+        </Grid>
+        <Grid
+          item
+          xs={3}
+          container
+          justify='center'
+        >
+          <EyeDropper
+            startColor='#07B39B'
+            endColor='#6FBA82'
+            width={20}
+            opacity={0.4}
+          />
         </Grid>
       </Grid>
     </Section>
@@ -107,13 +124,25 @@ const styles = theme => ({
 
 export default withStyles(styles)(Divider)
 /*
-.Nav li a {
-	position: relative;
-	padding-left: 32px;
-	transition: text-indent 0.3s ease-in-out, -webkit-text-fill-color 0.3s ease-in-out;
+.text-spectrum--c {
+	background: linear-gradient(80deg, #07B39B,#6FBA82);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .text-spectrum--y {
 	background: linear-gradient(80deg, #F79533,#F37055);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-spectrum--m {
+	background: linear-gradient(80deg, #EF4E7B,#A166AB);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-spectrum--k {
+	background: linear-gradient(80deg, #5073B8,#1098AD);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

@@ -10,17 +10,23 @@ import SponsorsGrid from './SponsorsGrid'
 // eslint-disable-next-line
 import { green } from 'logger'
 
-const School = () => {
+const School = ({ classes }) => {
   return (
     <Section id='sponsors'>
-      <SectionTitle>
-        Our Sponsors
-      </SectionTitle>
+      <div className={classes.title}>
+        <SectionTitle >
+          Our Sponsors
+        </SectionTitle>
+      </div>
       <SponsorsGrid />
     </Section>
   )
 }
 
 const styles = {
+  title: {
+    width: '100%',
+    marginBottom: '25px'
+  }
 }
 export default withStyles(styles)(School)

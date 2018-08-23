@@ -1,17 +1,24 @@
 import React from 'react'
+import { withStyles } from '@material-ui/core'
+
 import Body1 from 'ui/ui-elements/Body1'
 
-const A = (props) => {
+const A = ({ classes, children, href}) => {
   return (
-    <a href={props.href}>
+    <a href={href} className={classes.a}>
       <Body1
         variant='body1'
         color='green'
       >
-        {props.children}
+        {children}
       </Body1>
     </a>
   )
 }
 
-export default A
+const styles = {
+  a: {
+    textDecoration: 'none'
+  }
+}
+export default withStyles(styles)(A)

@@ -33,8 +33,7 @@ const Header = ({ classes }) => {
   )
 }
 
-
-const styles = {
+const styles = theme => ({
   tvc: {
     textAlign: 'center',
     lineHeight: '2.6rem',
@@ -46,6 +45,9 @@ const styles = {
     fontFamily: "'Wallpoet', cursive",
     fontSize: '2.6rem',
     marginRight: '20px',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '2.34rem'
+    },
   },
   wordCodersDesktop: {
     color: '#53EB76',
@@ -53,7 +55,10 @@ const styles = {
     fontFamily: "'Ubuntu Mono', monospace",
     fontSize: '3.0rem',
     fontWeight: 700,
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '2.7rem'
+    },
   },
 
-}
+})
 export default withStyles(styles)(Header)
