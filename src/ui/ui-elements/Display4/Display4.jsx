@@ -7,6 +7,7 @@ import {
 import fontSizeFromString from 'lib/fontSizeFromString'
 import classNames from 'lib/classNames'
 /* Dev */
+// eslint-disable-next-line
 import { green as greenl } from 'logger'
 
 /*

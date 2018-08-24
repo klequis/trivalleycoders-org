@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card'
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
 import A from 'ui/ui-elements/A'
 
@@ -16,7 +16,7 @@ const Sponsor = ({ classes, height, href, width, src, title, subTitle }) => {
         <ResponsiveImage src={src} alt={title} />
       </Card>
     </A>
-  );
+  )
 }
 
 Sponsor.propTypes = {

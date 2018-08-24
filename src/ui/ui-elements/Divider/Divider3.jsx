@@ -7,7 +7,6 @@ import {
 
 import Section from 'ui/ui-elements/Section'
 import Bug from 'ui/ui-elements/svg/Bug'
-// import Code from 'ui/ui-elements/svg/Code'
 import CodeBranch from 'ui/ui-elements/svg/CodeBranch'
 import Coffee from 'ui/ui-elements/svg/Coffee'
 import Code from 'ui/ui-elements/svg/Code'
@@ -25,18 +24,12 @@ const Divider = ({ classes }) => {
   return (
 
     <Section
+      id='Divider3'
       color='transparent'
       className={classes.divider}
     >
       <Grid
-        // alignContent={alignContent}
-        // alignItems={alignItems}
-        // className={className}
         container
-        // justify={justify}
-        // direction={direction}
-        // spacing={spacing}
-        // wrap={wrap}
       >
         <Grid
           item
@@ -101,9 +94,6 @@ const styles = theme => ({
     fill: 'blue !importan'
   },
   icon: {
-    // color: 'rgba(255, 255, 255, .2)',
-    // textFillColor: 'rgba(0, 0, 0, 0)',
-    // backgroundColor: 'rgba(0, 0, 0, 0)',
     color: 'transparent',
     background: 'linear-gradient(80deg, #F79533,#F37055)',
 
@@ -111,40 +101,6 @@ const styles = theme => ({
   divider: {
     margin: '50px 0 40px 0'
   }
-  // outer: {
-  //   padding: '0 10% 0 10%',
-
-  //   [theme.breakpoints.down('sm')]: {
-  //     padding: 0
-  //   },
-    // paddingBottom: theme.spacing.unit
-    // backgroundColor: 'red',
-  // },
 })
 
 export default withStyles(styles)(Divider)
-/*
-.text-spectrum--c {
-	background: linear-gradient(80deg, #07B39B,#6FBA82);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.text-spectrum--y {
-	background: linear-gradient(80deg, #F79533,#F37055);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.text-spectrum--m {
-	background: linear-gradient(80deg, #EF4E7B,#A166AB);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.text-spectrum--k {
-	background: linear-gradient(80deg, #5073B8,#1098AD);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-*/

@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   withStyles,
-  Grid,
 } from '@material-ui/core'
 
 
@@ -20,6 +19,7 @@ const Divider = ({ classes }) => {
   return (
 
     <Section
+      id='DividerBlank'
       color='transparent'
       className={classes.divider}
     >

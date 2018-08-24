@@ -5,6 +5,8 @@ import { Paper } from '@material-ui/core'
 import Body1 from 'ui/ui-elements/Body1'
 import Body2 from 'ui/ui-elements/Body2'
 import A from 'ui/ui-elements/A'
+
+// eslint-disable-next-line
 import { green } from 'logger'
 
 const Member = ({ alt, classes, src, imageHeight, imageWidth, name, paperWidth, role, title, url }) => {

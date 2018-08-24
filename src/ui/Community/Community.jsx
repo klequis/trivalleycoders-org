@@ -5,7 +5,7 @@ import {
 } from '@material-ui/core'
 /* User */
 import ResponsiveImage from 'ui/ui-elements/ResponsiveImage'
-import Section, { white } from 'ui/ui-elements/Section'
+import Section from 'ui/ui-elements/Section'
 import Display2 from 'ui/ui-elements/Display2'
 import Display3 from 'ui/ui-elements/Display3'
 import MeetupButton from 'ui/ui-elements/MeetupButton'

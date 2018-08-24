@@ -7,6 +7,7 @@ import {
 import fontSizeFromString from 'lib/fontSizeFromString'
 import classNames from 'lib/classNames'
 /* Dev */
+// eslint-disable-next-line
 import { green as greenl } from 'logger'
 
 /*
@@ -22,16 +23,22 @@ const Display2 = ({
   className,
   color,
   noWrap,
+  theme
 }) => {
+  // greenl('classNames', classNames([classes[variant], className ]))
+  greenl('color', typeof color)
+  const fontColor = color === 'white'
+    ? { color: 'rgba(255, 255, 255, 1)' }
+    : {}
   return (
     <Typography
       align={align}
       className={classNames([classes[variant], className ])}
-      color={color}
       noWrap={noWrap}
       variant={variant}
+
     >
-      {children}
+      <span style={fontColor}>{children}</span>
     </Typography>
   )
 
@@ -61,4 +68,9 @@ const styles = theme => {
   })
 }
 
-export default withStyles(styles)(Display2)
+export default withStyles(
+  styles,
+  {
+    withTheme: true,
+  }
+)(Display2)

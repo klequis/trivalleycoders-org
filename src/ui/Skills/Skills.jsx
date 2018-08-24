@@ -9,6 +9,7 @@ import Logo from './Logo'
 import { row1 } from './logoData'
 import SectionTitle from 'ui/ui-elements/SectionTitle'
 import Headline from 'ui/ui-elements/Headline'
+import Display3 from 'ui/ui-elements/Display3'
 /* Dev */
 // eslint-disable-next-line
 import { green } from 'logger'
@@ -18,9 +19,9 @@ const Skills = ({ classes }) => {
     <React.Fragment>
     <div className={classes.titles}>
       <SectionTitle>Making Software</SectionTitle>
-      <Headline align='center'>
+      <Display3 align='center' className={classes.stack}>
         It takes a stack to build an app!
-      </Headline>
+      </Display3>
     </div>
     <Section
       id='skills'
@@ -58,6 +59,9 @@ const Skills = ({ classes }) => {
 }
 
 const styles = theme => ({
+  stack: {
+    marginBottom: theme.spacing.unit * 4
+  },
   titles: {
     display: 'flex',
     flexFlow: 'column',

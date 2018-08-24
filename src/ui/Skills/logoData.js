@@ -1,5 +1,4 @@
 const size1 = 51.13636362
-const size2 = 51.13636362
 
 /*
 - aws-sdk

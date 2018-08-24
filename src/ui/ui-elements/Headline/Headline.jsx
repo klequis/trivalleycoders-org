@@ -5,10 +5,11 @@ import {
 } from '@material-ui/core'
 /* User */
 import fontSizeFromString from 'lib/fontSizeFromString'
+import classNames from 'lib/classNames'
 
 /* Dev */
+// eslint-disable-next-line
 import { green as greenl } from 'logger'
-import classNames from 'lib/classNames'
 
 /*
     Params match their material-ui equilivant

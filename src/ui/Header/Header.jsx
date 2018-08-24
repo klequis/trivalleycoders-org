@@ -17,7 +17,8 @@ const Header = ({ classes }) => {
       <Grid
         item
         xs={12}
-        justify='center'
+        // justify='center'
+        className={classes.wordWrap}
       >
         <div id='tvc' className={classes.tvc}>
           <span className={classes.wordTrivalleyDesktop}>TriValley</span>
@@ -34,9 +35,18 @@ const Header = ({ classes }) => {
 }
 
 const styles = theme => ({
+  wordWrap: {
+    marginTop: '2.5rem',
+    marginBottom: '2.5rem',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '1.5rem',
+      marginBottom: '1.5rem',
+    },
+  },
   tvc: {
     textAlign: 'center',
     lineHeight: '2.6rem',
+
     marginBottom: '0.5rem',
   },
   wordTrivalleyDesktop: {
