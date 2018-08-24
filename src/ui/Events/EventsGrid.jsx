@@ -44,11 +44,10 @@ const EventGrid = (props) => {
     <Grid
       container
       spacing={Number(8)}
-      className={classes.container}
       justify='center'
     >
 
-      {slice(1, 7, events).map(c => {
+      {slice(0, 6, events).map(c => {
         const imageUrl = hasProp('featured_photo', c)
           ? c.featured_photo.highres_link
           : 'https://s3-us-west-2.amazonaws.com/tvc-events/media-for-test/tvc.jpg'
@@ -57,7 +56,7 @@ const EventGrid = (props) => {
           <Grid
             item
             key={c.id}
-            xs={12} sm={6} md={4} lg={3} xl={2}
+            xs={12} sm={6} md={4} lg={3} xl={3}
             className={classes.item}
           >
             <Card className={classes.card}>

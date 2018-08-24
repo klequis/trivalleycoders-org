@@ -13,11 +13,13 @@ import Divider1 from 'ui/ui-elements/Divider/Divider1'
 import Divider2 from 'ui/ui-elements/Divider/Divider2'
 import Divider3 from 'ui/ui-elements/Divider/Divider3'
 import DividerBlank from 'ui/ui-elements/Divider/DividerBlank'
+import Breakpoints from 'ui/ui-elements/Breakpoints'
 
 const Home = ({ classes }) => {
   return (
     <React.Fragment>
       <Header />
+      <Breakpoints />
       <Community />
       <Divider1 />
       <Skills />
@@ -25,7 +27,7 @@ const Home = ({ classes }) => {
       <Team />
       <Divider3 />
       <Events />
-      <Divider3 />
+      <Divider1 />
       <Sponsors />
       <DividerBlank />
 

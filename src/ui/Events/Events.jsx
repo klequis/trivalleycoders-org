@@ -19,16 +19,15 @@ class Events extends Component {
   async componentWillMount() {
     const data = getCachedData('events')
     if (!data) {
-      green('** Calling API')
+      // green('** Calling API')
       await this.props.requestReadEvents()
       setCachedData('events', this.props.events)
       this.setState({ usingCashedData: true })
 
     } else {
-      green('** Using cached data')
+      // green('** Using cached data')
       this.props.replaceEvents(data)
       this.setState({ usingCashedData: true })
-
     }
   }
 
@@ -42,7 +41,6 @@ class Events extends Component {
   }
 
   render() {
-
     const { readEventsRequest, events } = this.props
     const { usingCashedData } = this.state
     if (usingCashedData) {
@@ -76,11 +74,6 @@ class Events extends Component {
   }
 }
 
-// Events.propTypes = {
-//   requestReadEvents: PropTypes.func.isRequired,
-//   readEventsRequest: PropTypes.object.isRequired,
-// }
-
 const mapStateToProps = (state) => {
   const o = {
     readEventsRequest: selectors.getRequest(state, 'readEvents'),
@@ -90,19 +83,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actionCreators)(Events)
-
-/*
-const renderEvents = this.props.events.map((e) => (
-        <Event
-          key={e.time}
-          date={e.time}
-          name={e.name}
-          locationName={`${e.venue.name}`}
-          locationAddress={`${e.venue.address_1}`}
-          locationCity={`${e.venue.city}`}
-          url={e.event_url}
-          index={i++}
-        />
-      )
-    )
-*/

@@ -39,22 +39,14 @@ export const fetchEvents = (url) => {
     })
 }
 
-
-
-
 export default {
-
   events: {
     readEvents() {
-
-
-        return fetchJsonp(urlEvents).then(res => {
-          return res.json()
-        }).then(json => {
-          return json.data
-        })
-
+      return fetchJsonp(urlEvents).then(res => {
+        return res.json()
+      }).then(json => {
+        return json.data
+      })
     },
   },
-
 }

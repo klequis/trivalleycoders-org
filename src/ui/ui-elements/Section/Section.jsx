@@ -70,7 +70,10 @@ const styles = theme => ({
     padding: '0 10% 0 10%',
 
     [theme.breakpoints.down('sm')]: {
-      padding: 0
+      padding: '0 2% 0 2%',
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: '0 20% 0 20%',
     },
     // paddingBottom: theme.spacing.unit
     // backgroundColor: 'red',
@@ -79,49 +82,3 @@ const styles = theme => ({
 
 export default withStyles(styles)(Section)
 
-// divider: {
-  //   height: 0.5,
-	//   backgroundImage: 'linear-gradient(to right, #F79533,#F37055,#EF4E7B,#A166AB,#5073B8,#1098AD,#07B39B,#6FBA82)',
-  // },
-
-  // const sectionStyle = color => {
-  //   switch (color) {
-  //     case grey:
-  //       return classes.bgGrey
-  //     case darkGrey:
-  //       return classes.bgDarkGrey
-  //     case white:
-  //       return classes.bgWhite
-  //     default:
-  //       throw new Error('default')
-  //   }
-  // }
-  // green(`sectionStyle: ${id}` , sectionStyle(color))
-
-
-  // inner: {
-  //   width: '80vw',
-  //   minHeight: '100px',
-  //   margin: '0 auto',
-  //   display: 'flex',
-  //   flexFlow: 'column nowrap',
-  //   alignItems: 'center',
-  //   // border: '1px green solid',
-  //   // backgroundColor: 'purple',
-  // },
-
-  // bgGrey: {
-  //   width: '100vw',
-  //   minHeight: '100px'
-  //   // backgroundColor: theme.palette.common.background.medium,
-  // },
-  // bgDarkGrey: {
-  //   width: '100vw',
-  //   minHeight: '100px'
-  //   // backgroundColor: theme.palette.common.background.dark,
-  // },
-  // bgWhite: {
-  //   width: '100vw',
-  //   minHeight: '100px'
-  //   // backgroundColor: theme.palette.common.background.light,
-  // },
