@@ -21,7 +21,6 @@ const Community = ({ classes }) => {
 
       <Grid
         item
-        className={classes.bgBlue}
         xs={12}
         sm={12}
         md={6}

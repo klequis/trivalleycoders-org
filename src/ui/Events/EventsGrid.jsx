@@ -50,7 +50,7 @@ const EventGrid = (props) => {
       {slice(0, 6, events).map(c => {
         const imageUrl = hasProp('featured_photo', c)
           ? c.featured_photo.highres_link
-          : 'https://s3-us-west-2.amazonaws.com/tvc-events/media-for-test/tvc.jpg'
+          : 'https://s3-us-west-2.amazonaws.com/trivalleycoders-images/check-back-soon.png'
         const location = `${c.venue.city}, ${c.venue.state} ${c.venue.zip}`
         return (
           <Grid
@@ -60,7 +60,7 @@ const EventGrid = (props) => {
             className={classes.item}
           >
             <Card className={classes.card}>
-              <a href={c.event_url} className={classes.link}>
+              <a href={c.link} className={classes.link}>
                 <CardMedia
                   className={classes.media}
                   image={imageUrl}
@@ -107,7 +107,9 @@ const styles = {
   },
   media: {
     height: 0,
-    paddingTop: '55.170%',
+    // paddingTop: '55.170%',
+    paddingTop: '56.2851782363977%'
+
   },
   title: {
     height: '40px',

@@ -12,7 +12,7 @@ import { green } from 'logger'
 
 const MeetupButton = ({ classes }) => {
   return (
-    <a href='https://www.meetup.com/trivalleycoders/events'>
+    <a href='https://www.meetup.com/trivalleycoders/events' className={classes.link}>
       <Button variant="contained" size="large" color="primary" className={classes.button}>
         <FontAwesomeIcon className={classes.leftIcon} icon={faMeetup} /> Join Us via Meetup!
       </Button>
@@ -27,6 +27,9 @@ const styles = theme => ({
   leftIcon: {
     marginRight: theme.spacing.unit,
     fontSize: 40,
+  },
+  link: {
+    textDecoration: 'none',
   },
   rightIcon: {
     marginLeft: theme.spacing.unit,

@@ -4,7 +4,7 @@ import {
   Grid,
 } from '@material-ui/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faMeetup, faGithub, faSlackHash } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faMeetup, faGithub, faSlack } from '@fortawesome/free-brands-svg-icons'
 /* User */
 import Section from 'ui/ui-elements/Section'
 import Body1 from 'ui/ui-elements/Body1'
@@ -55,7 +55,7 @@ const Footer = ({ classes }) => {
           container
           justify='center'
         >
-          <FontAwesomeIcon className={classes.slack} icon={faSlackHash} />
+          <FontAwesomeIcon className={classes.slack} icon={faSlack} />
         </Grid>
         <Grid
           item
@@ -102,7 +102,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 2,
   },
   meetup: {
-    color: 'white',
+    color: '#f64060',
     fontSize: '3em',
     margin: '10px',
   },
@@ -117,7 +117,7 @@ const styles = theme => ({
     margin: '10px',
   },
   facebook: {
-    color: 'white',
+    color: '#3e5b99',
     fontSize: '3em',
     margin: '10px',
   },
