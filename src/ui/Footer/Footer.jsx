@@ -8,6 +8,7 @@ import { faFacebook, faMeetup, faGithub, faSlack } from '@fortawesome/free-brand
 /* User */
 import Section from 'ui/ui-elements/Section'
 import Body1 from 'ui/ui-elements/Body1'
+import A from 'ui/ui-elements/A'
 
 /* Dev */
 // eslint-disable-next-line
@@ -37,7 +38,7 @@ const Footer = ({ classes }) => {
           container
           justify='center'
         >
-          <FontAwesomeIcon className={classes.meetup} icon={faMeetup} />
+          <A href='https://www.meetup.com/trivalleycoders/events/253711564/'><FontAwesomeIcon className={classes.meetup} icon={faMeetup} /></A>
         </Grid>
         <Grid
           item
@@ -46,7 +47,7 @@ const Footer = ({ classes }) => {
           container
           justify='center'
         >
-          <FontAwesomeIcon className={classes.github} icon={faGithub} />
+          <A href='https://github.com/trivalleycoders-org'><FontAwesomeIcon className={classes.github} icon={faGithub} /></A>
         </Grid>
         <Grid
           item
@@ -55,7 +56,7 @@ const Footer = ({ classes }) => {
           container
           justify='center'
         >
-          <FontAwesomeIcon className={classes.slack} icon={faSlack} />
+          <A href='https://join.slack.com/t/trivalleycoders/shared_invite/enQtMjk2NDY3NDAwMjI1LWU0YjFjNjE5MDgwYzYwYmUwMWJlNjk1NDU4YmI5ZmZjZGU0ZDcwY2E2Y2RlNmU0MWFlZTUyODFkYzM1NGVlYTQ'><FontAwesomeIcon className={classes.slack} icon={faSlack} /></A>
         </Grid>
         <Grid
           item
@@ -64,7 +65,7 @@ const Footer = ({ classes }) => {
           container
           justify='center'
         >
-          <FontAwesomeIcon className={classes.facebook} icon={faFacebook} />
+          <A href='https://www.facebook.com/groups/free.code.camp.sanramon/'><FontAwesomeIcon className={classes.facebook} icon={faFacebook} /></A>
         </Grid>
       </Grid>
       <Grid
