@@ -26,6 +26,7 @@ const Community = ({ classes }) => {
         md={6}
         lg={6}
         xl={6}
+        // className={classes.bgBlue}
       >
         <ResponsiveImage src={iCommunity} alt='people talking at coffee shop' />
       </Grid>
@@ -33,7 +34,7 @@ const Community = ({ classes }) => {
       <Grid
         item
         container
-        className={classes.bgRed}
+        // className={classes.bgRed}
         xs={12}
         sm={12}
         md={6}
@@ -66,6 +67,12 @@ const Community = ({ classes }) => {
 }
 
 const styles = theme => ({
+  // bgRed: {
+  //   backgroundColor: 'red',
+  // },
+  // bgBlue: {
+  //   backgroundColor: 'blue',
+  // },
   community: {
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px'
