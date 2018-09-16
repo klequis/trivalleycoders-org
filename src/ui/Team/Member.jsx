@@ -16,35 +16,35 @@ const Member = ({ alt, classes, src, imageHeight, imageWidth, name, paperWidth, 
   }
   return (
     <A href={url}>
-    <Paper id='paper' className={classes.paper} style={paperStyle}>
-      <img
-        src={src}
-        alt={alt}
-        className={classes.imgFluid}
-        height={imageHeight}
-        width={imageWidth}
-      />
-      <Body2
-        align='center'
-        className={classes.body2}
-      >
-        {name}
-      </Body2>
-      <Body1
-        align='center'
-        className={classes.body1}
-        gutterBottom={true}
-      >
-        {role}
-      </Body1>
-      <Body1
-        align='center'
-        className={classes.body1}
-        gutterBottom={true}
-      >
-        {title}
-      </Body1>
-    </Paper>
+      <Paper id='paper' className={classes.paper} style={paperStyle}>
+        <img
+          src={src}
+          alt={alt}
+          className={classes.imgFluid}
+          height={imageHeight}
+          width={imageWidth}
+        />
+        <Body2
+          align='center'
+          className={classes.body2}
+        >
+          {name}
+        </Body2>
+        <Body1
+          align='center'
+          className={classes.body1}
+          gutterBottom={true}
+        >
+          {role}
+        </Body1>
+        <Body1
+          align='center'
+          className={classes.body1}
+          gutterBottom={true}
+        >
+          {title}
+        </Body1>
+      </Paper>
     </A>
   )
 }
@@ -65,17 +65,10 @@ const styles = theme => ({
     marginRight: 'auto',
   },
   paper: {
-    // padding: theme.spacing.unit * 3,
     display: 'flex',
     alignItems: 'center',
     flexFlow: 'column nowrap',
-
-    // width: 300,
     height: '100%',
-
-    // [theme.breakpoints.down('sm')]: {
-    //   width: '80%'
-    // },
   }
 })
 
