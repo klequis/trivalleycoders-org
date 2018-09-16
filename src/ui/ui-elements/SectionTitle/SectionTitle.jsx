@@ -13,11 +13,6 @@ import { green } from 'logger'
 
 const SectionTitle = ({ children, classes, bgColor='light', theme }) => {
 
-  // const fontColor = {
-  //   color: bgColor === 'light'
-  //     ? theme.palette.common.headings.dark
-  //     : theme.palette.common.headings.light
-  // }
   return (
     <Display2
       align='center'
