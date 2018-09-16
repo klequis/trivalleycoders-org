@@ -35,7 +35,7 @@ const Section = ({
 }) => {
 
   const outerStyle = {
-    backgroundColor: color
+    backgroundColor: color,
   }
   return (
 
@@ -67,16 +67,14 @@ Section.propTypes = {
 const styles = theme => ({
 
   outer: {
-    padding: '0 10% 0 10%',
+    padding: '0 1rem 0 1rem',
 
-    [theme.breakpoints.down('sm')]: {
-      padding: '0 2% 0 2%',
-    },
-    [theme.breakpoints.up('md')]: {
-      padding: '0 20% 0 20%',
-    },
-    // paddingBottom: theme.spacing.unit
-    // backgroundColor: 'red',
+    // [theme.breakpoints.down('sm')]: {
+    //   padding: '0 2% 0 2%',
+    // },
+    // [theme.breakpoints.up('md')]: {
+    //   padding: '0 1rem 0 1rem',
+    // },
   },
 })
 
